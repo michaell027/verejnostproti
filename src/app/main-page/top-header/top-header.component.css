@@ -1,0 +1,22 @@
+/* Customize the header styles here if needed */
+.navbar {
+  padding: 5px 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 15px;
+}
+
+.phone-help-center {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.phone-number {
+  font-size: 14px;
+}

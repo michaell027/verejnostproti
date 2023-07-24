@@ -1,0 +1,147 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.content-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1; /* Zabezpečuje, aby bol obsah nad obrázkom */
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-size: 36px; /* prispôsobte veľkosť písma podľa potreby */
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.buttons-container {
+   margin-top: 20px;
+ }
+
+.read-more-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  opacity: 0.9;
+  border: white 2px solid;
+}
+
+.read-more-button:hover {
+  opacity: 1;
+  background-color: rgba(158,112,174,255);
+  border: 2px solid #fff;
+}
+/* Your existing CSS styles for .content-container, .read-more-button, and .buttons-container */
+
+h5 {
+  position: absolute;
+  top: 90px; /* Adjust the distance from the top edge of the .content-container */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 0;
+}
+
+/* Your existing CSS styles for .background-container, .background-image, .overlay, .content-container, .read-more-button, and .buttons-container */
+
+.column {
+  position: absolute;
+  background-color: #000;
+  width: 100px;
+  height: 100%;
+}
+
+.column-1 {
+  background-color: rgba(158,112,174,1);
+  top: 100vh;
+  left: 80px;
+  width: 380px;
+}
+
+.column-2 {
+  background-color: rgba(158,112,174,1);
+  top: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 380px;
+}
+
+.column-3 {
+  background-color: rgba(158,112,174,1);
+  top: 100vh;
+  right: 80px;
+  width: 380px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(158,112,174,1);
+  border-radius: 50%;
+  margin-top: -50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-circle {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
