@@ -1,24 +1,20 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
+import { CanActivate, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
-export class MyAuthGuard implements CanActivate {
+export class MyAuthGuard implements CanActivate{
   constructor(private router: Router) {}
 
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot
-  ): boolean | UrlTree {
-    return myAuthGuard(next, state);
+  canActivate(){
+    const isAuthenticated = false;
+    if (isAuthenticated) {
+      return true;
+    } else {
+      this.router.navigate(['/homePage']);
+      return false;
+    }
   }
-}
 
-export function myAuthGuard(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree {
-  // Your custom logic goes here
-  // For example, you can check if the user is authenticated and return true or false accordingly
-  // If not authenticated, you can redirect to the login page or any other route using the Router
-
-  return true; // Replace this with your custom logic
 }

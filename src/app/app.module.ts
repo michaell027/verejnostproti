@@ -11,13 +11,9 @@ import {MainPageComponent} from "./main-page/main-page.component";
 import { MainSectionComponent } from './main-page/main-section/main-section.component';
 import { TopHeaderComponent } from './main-page/top-header/top-header.component';
 import {ButtonModule} from "primeng/button";
-
-const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: MainPageComponent },
-  { path: 'protected', component: AboutPageComponent, canActivate: [MyAuthGuard] },
-  //{ path: '**', component: NotFoundComponent }
-];
+import { ColumnsComponent } from './main-page/columns/columns.component';
+import {DividerModule} from "primeng/divider";
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -26,13 +22,16 @@ const routes: Routes = [
     HeaderComponent,
     AboutPageComponent,
     MainSectionComponent,
-    TopHeaderComponent
+    TopHeaderComponent,
+    ColumnsComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
+    RouterModule,
     MenubarModule,
-    ButtonModule
+    ButtonModule,
+    DividerModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

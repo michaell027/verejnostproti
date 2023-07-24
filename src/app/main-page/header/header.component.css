@@ -20,6 +20,8 @@ nav {
   transform: scale(1); /* Modify scale as needed */
   height: 50px; /* Set the desired height for the scrolled navbar */
   transition: transform 2s ease, height 0.5s ease; /* Add height transition after 2 seconds */
+  background-color: transparent;
+  opacity: 1;
 }
 .logo-big {
   transform: scale(1);
