@@ -14,6 +14,8 @@ import {ButtonModule} from "primeng/button";
 import { ColumnsComponent } from './main-page/columns/columns.component';
 import {DividerModule} from "primeng/divider";
 import { AppRoutingModule } from './app-routing.module';
+import { VideoHolderComponent } from './main-page/video-holder/video-holder.component';
+import { GoalsComponent } from './main-page/goals/goals.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AppRoutingModule } from './app-routing.module';
     AboutPageComponent,
     MainSectionComponent,
     TopHeaderComponent,
-    ColumnsComponent
+    ColumnsComponent,
+    VideoHolderComponent,
+    GoalsComponent
   ],
   imports: [
     BrowserModule,

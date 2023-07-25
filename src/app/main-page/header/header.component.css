@@ -1,8 +1,3 @@
-/* navbar.component.css */
-/* Add a bottom border to the navbar */
-.navbar {
-}
-
 nav {
   opacity: 80;
   background-blend-mode: color;
@@ -11,31 +6,79 @@ nav {
   width: 100%;
   z-index: 2;
 }
+
 .none-scrolled-navbar {
   height: 100px;
-  transition: transform 0.5s ease, ease 2s; /* Delay height transition for 2 seconds */
+  transition: transform 0.5s ease, ease 2s
 }
 
 .scrolled-navbar {
-  transform: scale(1); /* Modify scale as needed */
-  height: 50px; /* Set the desired height for the scrolled navbar */
-  transition: transform 2s ease, height 0.5s ease; /* Add height transition after 2 seconds */
+  transform: scale(1);
+  height: 50px;
+  transition: transform 2s ease, height 0.5s ease;
   background-color: transparent;
   opacity: 1;
 }
+
 .logo-big {
   transform: scale(1);
-  transition: transform 1s ease; /* Add a transition property for the logo */
+  transition: transform 1s ease;
 }
 
 .logo-small {
   transform: scale(0.5);
-  transition: transform 1s ease; /* Add a transition property for the logo */
+  transition: transform 1s ease;
 }
 
-/* Add responsive styles for the collapsed menu */
-@media (max-width: 767px) {
-  /* Your styles for the collapsed menu */
+@media (max-width: 991.5px) {
+  nav {
+    opacity: 80;
+    background-blend-mode: color;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .logo-big {
+    transform: scale(1);
+    transition: transform 1s ease;
+  }
+
+  .logo-small {
+    transform: scale(0.5);
+    transition: transform 1s ease;
+  }
+
+  .none-scrolled-navbar {
+    transition: transform 0.5s ease, ease 2s
+  }
+
+  .scrolled-navbar {
+    top: 7px !important;
+    transform: scale(1);
+    transition: transform 2s ease, height 0.5s ease;
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .text-big {
+    transition: transform 1s ease;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .text-small {
+    transition: transform 1s ease;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+  }
 }
 
 .text-big {
@@ -56,18 +99,15 @@ nav {
   margin-top: 20px;
 }
 
-/* Your existing styles for .nav-link (including padding-right) */
 .nav-link {
   padding-right: 20px;
   justify-content: center;
   align-items: center;
 }
 
-/* Hover effect */
 .nav-link:hover {
   background-color: rgba(240, 240, 240, 0.5);
   color: #333;
-  /* rounded corners */
   border-radius: 5px;
 
 }
