@@ -1,0 +1,46 @@
+h2 {
+  text-align: start;
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 50px;
+  padding-left: 35px;
+  border-bottom: rgba(158,112,174,255) solid 4px;
+  border-bottom-style: groove;
+}
+
+ul {
+  text-align: left;
+}
+
+.holder {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 50px;
+}
+
+.goals-holder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 20px;
+  vertical-align: center;
+  font-size: 17px;
+}
+
+.list-group-item i {
+  font-size: 2rem;
+  margin-right: 20px;
+}
