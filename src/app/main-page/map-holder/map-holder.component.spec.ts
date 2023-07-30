@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CarouselComponent } from './carousel.component';
+import { MapHolderComponent } from './map-holder.component';
 
-describe('CarouselComponent', () => {
-  let component: CarouselComponent;
-  let fixture: ComponentFixture<CarouselComponent>;
+describe('MapHolderComponent', () => {
+  let component: MapHolderComponent;
+  let fixture: ComponentFixture<MapHolderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CarouselComponent]
+      declarations: [MapHolderComponent]
     });
-    fixture = TestBed.createComponent(CarouselComponent);
+    fixture = TestBed.createComponent(MapHolderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './main-page/header/header.component';
-import { AboutPageComponent } from './about-page/about-page.component';
 import { MenubarModule } from 'primeng/menubar';
 import {MainPageComponent} from "./main-page/main-page.component";
 import { MainSectionComponent } from './main-page/main-section/main-section.component';
@@ -15,26 +14,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { VideoHolderComponent } from './main-page/video-holder/video-holder.component';
 import { GoalsComponent } from './main-page/goals/goals.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarouselComponent } from './main-page/carousel/carousel.component';
 import {CarouselModule} from "primeng/carousel";
 import { TruncateTextPipe } from './truncate-text.pipe';
 import {StoriesHolderComponent} from "./main-page/stories-holder/stories-holder.component";
 import {CardModule} from "primeng/card";
+import { MapHolderComponent } from './main-page/map-holder/map-holder.component';
+import { GoogleMapsComponent } from './main-page/google-maps/google-maps.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { FooterComponent } from './main-page/footer/footer.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     HeaderComponent,
-    AboutPageComponent,
     MainSectionComponent,
     TopHeaderComponent,
     ColumnsComponent,
     VideoHolderComponent,
     GoalsComponent,
-    CarouselComponent,
     TruncateTextPipe,
     StoriesHolderComponent,
+    MapHolderComponent,
+    GoogleMapsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import {CardModule} from "primeng/card";
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
-    CardModule
+    CardModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

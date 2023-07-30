@@ -1,18 +1,56 @@
+.title-holder {
+  display: flex;
+  justify-content: end;
+  margin-right: 185px;
+}
+
 h2 {
-  padding: 50px 50px 20px 0;
+  padding: 50px 50px 0px 0;
   font-weight: 900;
   font-size: 2.5rem;
-  text-align: end;
   border-bottom-style: double;
-  border: #9e70ae;
+  border-bottom-color: #9e70ae;
+  border-bottom-width: 4px;
+  margin-bottom: 20px;
 }
 
 .card-container {
   display: flex;
   justify-content: space-between;
-  margin: 20px; /* Odsadenie od okrajov */
+  margin: 20px;
 }
 
 .card {
   width: 360px;
+  margin: 15px;
+}
+
+button {
+  background-color: rgba(157,111,177,255);
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(121,55,116,255) !important;
+}
+
+.buttons {
+  background-color: rgba(121,55,116,255);
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: rgba(157,111,177,255) !important;
 }

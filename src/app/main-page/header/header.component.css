@@ -16,8 +16,9 @@ nav {
   transform: scale(1);
   height: 50px;
   transition: transform 2s ease, height 0.5s ease;
-  background-color: transparent;
-  opacity: 1;
+  background-color: black;
+  opacity: 0.85;
+  padding-bottom: 10px;
 }
 
 .logo-big {
@@ -109,5 +110,5 @@ nav {
   background-color: rgba(240, 240, 240, 0.5);
   color: #333;
   border-radius: 5px;
-
 }
+

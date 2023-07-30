@@ -1,0 +1,25 @@
+.footer {
+  background-color: rgba(81, 15, 78, 0.85);
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  color: white;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+a {
+  color: white !important;
+}
+
+a:focus,
+a:active {
+  background-color: transparent !important;
+}
+
+i {
+  font-size: 20px;
+}

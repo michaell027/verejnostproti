@@ -1,0 +1,13 @@
+<google-map
+  [center]="mapCenter"
+  [zoom]="mapZoom"
+  [options]="mapOptions"
+>
+  <map-marker
+    [position]="markerPosition"
+    [title]="markerTitle"
+    [options]="markerOptions"
+    (mapClick)="openGoogleMaps()"
+  ></map-marker>
+
+</google-map>

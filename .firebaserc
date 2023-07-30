@@ -1,0 +1,11 @@
+{
+  "projects": {
+    "default": "verejnost-proti"
+  },
+  "targets": {},
+  "etags": {
+    "verejnost-proti": {
+      "extensionInstances": {}
+    }
+  }
+}
