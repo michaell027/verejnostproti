@@ -21,7 +21,9 @@ import {CardModule} from "primeng/card";
 import { MapHolderComponent } from './main-page/map-holder/map-holder.component';
 import { GoogleMapsComponent } from './main-page/google-maps/google-maps.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { FooterComponent } from './main-page/footer/footer.component'
+import { FooterComponent } from './main-page/footer/footer.component';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { AboutUsHolderComponent } from './about-us-page/about-us-holder/about-us-holder.component'
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { FooterComponent } from './main-page/footer/footer.component'
     MapHolderComponent,
     GoogleMapsComponent,
     FooterComponent,
+    AboutUsPageComponent,
+    AboutUsHolderComponent,
   ],
   imports: [
     BrowserModule,

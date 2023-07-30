@@ -1,8 +1,7 @@
-/* Customize the header styles here if needed */
 .navbar {
   padding: 5px 0;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   background-color: black;
   opacity: 0.85;
@@ -21,4 +20,13 @@
 
 .phone-number {
   font-size: 14px;
+}
+
+a {
+  color: white !important;
+}
+
+a:focus,
+a:active {
+  background-color: transparent !important;
 }

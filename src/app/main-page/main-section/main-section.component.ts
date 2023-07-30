@@ -18,4 +18,8 @@ export class MainSectionComponent implements OnInit {
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
+
+  openAboutUsPage() {
+    window.location.href = '/aboutPage';
+  }
 }

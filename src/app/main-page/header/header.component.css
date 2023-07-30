@@ -82,6 +82,16 @@ nav {
   }
 }
 
+@media (max-width: 576px) {
+  .text-mobile {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
 .text-big {
   transition: transform 1s ease;
   font-size: 30px;

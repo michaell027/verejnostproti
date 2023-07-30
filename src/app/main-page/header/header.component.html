@@ -5,16 +5,18 @@
       </a>
       <div style="display: flex; flex-direction: column; align-items: start;">
         <h2 class="text-white font-monospace fw-bold" style="margin-bottom: 0;" [ngClass]="{'text-big': !scrolled, 'text-small': scrolled}">VEREJNOSŤ PROTI</h2>
-        <p class="font-monospace text-white" style="margin-top: 0;">sexuálnemu zneužívaniu a obťažovaniu</p>
+        <p class="font-monospace text-white text-mobile" style="margin-top: 0;">
+          sexuálnemu zneužívaniu a obťažovaniu
+        </p>
       </div>
 
       <button class="navbar-toggler text-white" type="button" (click)="toggleMenu()">
-        <span class="navbar-toggler-icon"></span>
+        <i class="pi pi-bars" style="font-size: 2rem"></i>
       </button>
       <div class="collapse navbar-collapse" [ngClass]="{'show': showMenu}" (click)="closeMenu()" style="justify-content: flex-end;">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" *ngFor="let item of navItems">
-            <a class="nav-link text-white" style="margin-right: 30px" [routerLink]="item.route" >{{ item.label }}</a>
+            <a class="nav-link text-white" style="margin-right: 30px" [href]="item.route" >{{ item.label }}</a>
           </li>
         </ul>
       </div>
