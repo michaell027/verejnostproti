@@ -23,7 +23,12 @@ import { GoogleMapsComponent } from './main-page/google-maps/google-maps.compone
 import { GoogleMapsModule } from '@angular/google-maps';
 import { FooterComponent } from './main-page/footer/footer.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
-import { AboutUsHolderComponent } from './about-us-page/about-us-holder/about-us-holder.component'
+import { AboutUsHolderComponent } from './about-us-page/about-us-holder/about-us-holder.component';
+import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
+import { InfoHolderComponent } from './contact-us-page/info-holder/info-holder.component';
+import { ContactFormComponent } from './contact-us-page/contact-form/contact-form.component'
+import {ReactiveFormsModule} from "@angular/forms";
+import {InputTextModule} from "primeng/inputtext";
 
 @NgModule({
   declarations: [
@@ -42,6 +47,9 @@ import { AboutUsHolderComponent } from './about-us-page/about-us-holder/about-us
     FooterComponent,
     AboutUsPageComponent,
     AboutUsHolderComponent,
+    ContactUsPageComponent,
+    InfoHolderComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +61,9 @@ import { AboutUsHolderComponent } from './about-us-page/about-us-holder/about-us
     BrowserAnimationsModule,
     CarouselModule,
     CardModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    ReactiveFormsModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]

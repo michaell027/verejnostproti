@@ -1,7 +1,7 @@
 <div class="title-holder"><h2 class="text-uppercase">Vaše príbehy:</h2></div>
 <div class="card-container flex justify-content-center">
 
-  <p-card *ngFor="let story of stories" class="card" [header]=story.title [style]="{ width: '360px' }">
+  <p-card *ngFor="let story of stories" class="card" [header]=story.title>
     <p>
       {{story.description}}
     </p>

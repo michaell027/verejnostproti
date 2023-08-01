@@ -19,6 +19,11 @@ p {
   font-size: 30px;
 }
 
+iframe {
+  width: 700px;
+  height: 400px;
+}
+
 button {
   background-color: rgba(157,111,177,255);
   color: white;
@@ -32,4 +37,57 @@ button {
 
 button:hover {
   background-color: rgba(121,55,116,255) !important;
+}
+
+.container {
+  margin: 50px auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-holder {
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 991px) {
+  h4 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .custom-font {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  .row {
+    padding: 0 0 0 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .row {
+    padding: 0 0 0 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }

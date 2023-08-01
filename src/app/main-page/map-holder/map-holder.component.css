@@ -32,3 +32,26 @@ i {
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0;
+  }
+
+  .map-holder,
+  .address-holder {
+    text-align: center;
+  }
+
+  .col-md-6 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}

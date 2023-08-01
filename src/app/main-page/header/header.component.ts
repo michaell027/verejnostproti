@@ -10,7 +10,7 @@ import { MenuItem } from 'primeng/api';
 export class HeaderComponent{
   navItems = [
     { label: 'O nás', route: 'aboutPage' },
-    { label: 'Kontaktujte nás', route: '/contact' }
+    { label: 'Kontaktujte nás', route: '/contactPage' }
   ];
 
   showMenu = false;
