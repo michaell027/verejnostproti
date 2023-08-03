@@ -1,6 +1,6 @@
 .background-container {
   width: 100%;
-  height: 110vh;
+  height: 800px;
   overflow: hidden;
   position: relative;
 }
@@ -19,7 +19,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 110vh;
+  height: 800px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -81,12 +81,13 @@ h2 {
 
 @media (max-width: 1260px) {
   .background-container {
-    height: 110vh;
+    height: 800px;
   }
 
   .content-container {
     height: 400px;
     padding: 80px 40px;
+    margin: -400px 150px 0 150px;
   }
 
   h2 {
@@ -105,7 +106,7 @@ h2 {
 
   .content-container {
     height: 300px;
-    margin: -350px 100px 0 100px;
+    margin: -300px 100px 0 100px;
     padding: 80px 40px;
   }
 }

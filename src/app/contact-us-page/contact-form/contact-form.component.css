@@ -3,6 +3,28 @@
   margin: auto;
 }
 
-.form-group {
+form {
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #9e70ae;
+  border: none;
+  padding: 8px 15px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #73306f;
+}
+
+button:focus {
+  outline: none;
+  background-color: #73306f;
+}
+
+button:active {
+  background-color: #73306f;
 }

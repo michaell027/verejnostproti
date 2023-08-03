@@ -1,14 +1,13 @@
 <div class="container mt-3">
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
-
-      <label for="name">Meno</label>
+      <label for="name">Meno a priezvisko:</label>
       <div class="card flex flex-column md:flex-row gap-3">
         <div class="p-inputgroup">
         <span class="p-inputgroup-addon">
             <i class="pi pi-user"></i>
         </span>
-          <input type="text" id="name" class="form-control" formControlName="name" pInputText placeholder="Username" />
+          <input type="text" id="name" class="form-control" formControlName="name" pInputText placeholder="Meno a priezvisko" />
         </div>
         <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
              class="text-danger">Meno je povinné</div>
@@ -16,22 +15,43 @@
     </div>
 
     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="text" id="email" class="form-control" formControlName="email">
+      <label for="name">Email:</label>
+      <div class="card flex flex-column md:flex-row gap-3">
+        <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+            <i class="pi pi-at"></i>
+        </span>
+          <input type="text" id="email" class="form-control" formControlName="email" pInputText placeholder="Email" />
+        </div>
       <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
            class="text-danger">Zadajte platnú emailovú adresu</div>
     </div>
+    </div>
 
     <div class="form-group">
-      <label for="question">Otázka</label>
-      <textarea id="question" class="form-control" formControlName="question"></textarea>
+      <label for="name">Otázka:</label>
+      <div class="card flex flex-column md:flex-row gap-3">
+        <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+            <i class="pi pi-question-circle"></i>
+        </span>
+          <input type="text" id="question" class="form-control" formControlName="question" pInputText placeholder="Otázka" />
+        </div>
+      </div>
       <div *ngIf="contactForm.get('question')?.invalid && contactForm.get('question')?.touched"
            class="text-danger">Otázka je povinná</div>
     </div>
 
     <div class="form-group">
-      <label for="phoneNumber">Telefónne číslo</label>
-      <input type="text" id="phoneNumber" class="form-control" formControlName="phoneNumber">
+      <label for="name">Telefónne číslo:</label>
+      <div class="card flex flex-column md:flex-row gap-3">
+        <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+            <i class="pi pi-question-circle"></i>
+        </span>
+          <input type="text" id="phone" class="form-control" formControlName="phone" pInputText placeholder="Telefónne číslo" />
+        </div>
+      </div>
       <div *ngIf="contactForm.get('phoneNumber')?.invalid && contactForm.get('phoneNumber')?.touched"
            class="text-danger">Telefónne číslo je povinné</div>
     </div>

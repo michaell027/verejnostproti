@@ -1,5 +1,4 @@
 .container-fluid {
-  height: 120vh;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -7,7 +6,7 @@
 }
 
 .background-image {
-  height: 100%;
+  height: 1000px;
   background-image: url('https://www.unicef.org/kenya/sites/unicef.org.kenya/files/UNICEF%20Spot%20it%20stop%20it%20sexual%20abuse%20girl_0.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,7 +20,7 @@
 }
 
 .purple-box {
-  background-color: rgba(81,15,78,0.7);
+  background-color: rgba(81, 15, 78, 0.7);
   margin-top: 150px;
   padding: 30px 50px;
   border-radius: 8px;
@@ -39,13 +38,20 @@
 
 .white-column {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 75%;
-  z-index: 1;
-  text-align: justify;
-  text-align-last: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-lg-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -61,7 +67,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120vh;
+  height: 1000px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -100,4 +106,21 @@ i {
 
 .pi-angle-down {
   animation: moveUpDown 1s infinite;
+}
+
+@media (max-width: 992px) {
+  .row {
+    gap: 40px;
+  }
+  .background-image {
+    height: 1400px;
+  }
+
+  .white-column {
+    max-width: 600px;
+  }
+
+  .background-image::before {
+    height: 1400px;
+  }
 }
