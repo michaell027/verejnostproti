@@ -29,6 +29,15 @@ import { InfoHolderComponent } from './contact-us-page/info-holder/info-holder.c
 import { ContactFormComponent } from './contact-us-page/contact-form/contact-form.component'
 import {ReactiveFormsModule} from "@angular/forms";
 import {InputTextModule} from "primeng/inputtext";
+import {FirestoreModule, getFirestore, provideFirestore} from '@angular/fire/firestore';
+import {firebaseConfig} from "../enviroments/firebase-config";
+import {initializeApp, provideFirebaseApp} from "@angular/fire/app";
+import { AllStoriesPageComponent } from './all-stories-page/all-stories-page.component';
+import { AllStoriesHolderComponent } from './all-stories-page/all-stories-holder/all-stories-holder.component';
+import {PaginatorModule} from "primeng/paginator";
+import { TitleHolderComponent } from './all-stories-page/title-holder/title-holder.component';
+import {DialogModule} from "primeng/dialog";
+
 
 @NgModule({
   declarations: [
@@ -50,6 +59,9 @@ import {InputTextModule} from "primeng/inputtext";
     ContactUsPageComponent,
     InfoHolderComponent,
     ContactFormComponent,
+    AllStoriesPageComponent,
+    AllStoriesHolderComponent,
+    TitleHolderComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,9 +75,15 @@ import {InputTextModule} from "primeng/inputtext";
     CardModule,
     GoogleMapsModule,
     ReactiveFormsModule,
-    InputTextModule
+    InputTextModule,
+    FirestoreModule,
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
+    PaginatorModule,
+    DialogModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

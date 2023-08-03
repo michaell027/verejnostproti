@@ -1,32 +1,28 @@
 import {Component, OnInit} from '@angular/core';
-import {collection, doc, getDoc, getDocs} from '@angular/fire/firestore';
-import { Observable, from } from 'rxjs';
-import {AngularFirestore, QuerySnapshot} from "@angular/fire/compat/firestore";
-import firebase from "firebase/compat";
-import DocumentData = firebase.firestore.DocumentData;
+import {FirebaseService} from "../../firebase.service";
+import { TruncateTextPipe } from '../../truncate-text.pipe';
 
 
 @Component({
   selector: 'app-stories-holder',
   templateUrl: './stories-holder.component.html',
-  styleUrls: ['./stories-holder.component.css']
+  styleUrls: ['./stories-holder.component.css'],
+  providers: [TruncateTextPipe]
 })
-export class StoriesHolderComponent {
+export class StoriesHolderComponent implements OnInit{
 
+  data: any[] = [];
 
-  stories = [
-  {
-    title: 'The best of the best',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquam ultricies, nunc nisl ultricies nisl, vitae lacinia nisl nisl nec nisl. Sed vitae nisl auctor, aliqu',
-  },
-  {
-    title: 'The best of the best',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquam ultricies, nunc nisl ultricies nisl, vitae lacinia nisl nisl nec nisl. Sed vitae nisl auctor, aliqu',
-  },
-  {
-    title: 'The best of the best',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl sed aliquam ultricies, nunc nisl ultricies nisl, vitae lacinia nisl nisl nec nisl. Sed vitae nisl auctor, aliqu',
+  constructor(private firebaseService: FirebaseService) {}
+
+  ngOnInit() {
+    this.firebaseService.getData('stories').subscribe(data => {
+      this.data = data;
+      this.data.sort((a, b) => b.from - a.from);
+      this.data = this.data.slice(0, 3);
+    });
   }
-];
-  }
+
+  protected readonly window = window;
+}
 
