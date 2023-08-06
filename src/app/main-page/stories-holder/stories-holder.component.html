@@ -6,7 +6,7 @@
       {{ story.description | truncateText: 50 }}
     </p>
     <ng-template pTemplate="footer">
-      <button class="buttons">Čítať ďalej</button>
+      <button class="buttons" (click)="showDialog(story.title, story.description)">Čítať ďalej</button>
     </ng-template>
   </p-card>
 
@@ -14,5 +14,29 @@
 
 <div class="title-holder gap-4">
   <button (click)="window.location.href='storiesPage'">Viac príbehov</button>
-  <button>Pridať príbeh</button>
+  <button (click)="showForm()">Pridať príbeh</button>
 </div>
+
+<p-dialog header="{{storyTitle}}" [(visible)]="visible" [style]="{ maxWidth: '60vw', maxHeight: '400px'}">
+  <p>
+    {{storyDescription}}
+  </p>
+</p-dialog>
+
+<p-dialog header="Pridaj príbeh" [(visible)]="formVisible" [style]="{ maxWidth: '60vw', maxHeight: '500px'}">
+  <div class="card flex justify-content-center">
+    <span class="p-float-label" style="margin-top: 5px; margin-bottom: 25px">
+        <input pInputText id="username" [(ngModel)]="storyTitle" style="min-width: 300px" />
+<label htmlFor="username">Nadpis</label>
+
+    </span>
+    <span class="p-float-label">
+<textarea id="float-input" rows="5" cols="38" style="margin-bottom: 25px; min-height: 40px" pInputTextarea [(ngModel)]="storyDescription"></textarea>
+<label for="float-input">Summary</label>
+
+
+    </span>
+    <button class="buttons" (click)="addStory()">Pridať príbeh</button>
+  </div>
+
+</p-dialog>

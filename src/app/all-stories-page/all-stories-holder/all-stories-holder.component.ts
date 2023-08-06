@@ -27,9 +27,11 @@ export class AllStoriesHolderComponent {
 
   loadData() {
     this.firebaseService.getData('stories').subscribe((data: any[]) => {
-      this.data = data.sort((a, b) => b.from - a.from);
+      // Filter out the stories with verified: false
+      this.data = data.filter(story => story.verified === "true").sort((a, b) => b.from - a.from);
     });
   }
+
 
   getCurrentPageData(): any[] {
     const start = this.currentPage * this.storiesPerPage;

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {collection, Firestore, getDocs} from "@angular/fire/firestore";
+import {addDoc, collection, Firestore, getDocs} from "@angular/fire/firestore";
 import {from, Observable} from "rxjs";
 
 @Injectable({
@@ -19,6 +19,12 @@ export class FirebaseService {
         });
       })
     );
+  }
+
+  async addData(path: string, data: any): Promise<any> {
+    const dataCollection = collection(this.firestore, path);
+    const docRef = await addDoc(dataCollection, data);
+    return docRef.id;
   }
 
   async getCollection(path: string): Promise<any[]> {

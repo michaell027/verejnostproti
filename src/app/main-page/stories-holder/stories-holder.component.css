@@ -23,6 +23,7 @@ h2 {
 .card {
   max-width: 360px;
   margin: 15px;
+  border: none;
 }
 
 button {

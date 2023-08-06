@@ -37,6 +37,7 @@ import { AllStoriesHolderComponent } from './all-stories-page/all-stories-holder
 import {PaginatorModule} from "primeng/paginator";
 import { TitleHolderComponent } from './all-stories-page/title-holder/title-holder.component';
 import {DialogModule} from "primeng/dialog";
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import {DialogModule} from "primeng/dialog";
     AllStoriesPageComponent,
     AllStoriesHolderComponent,
     TitleHolderComponent,
+    AdminPageComponent,
   ],
   imports: [
     BrowserModule,
