@@ -56,6 +56,15 @@ button:hover {
   background-color: rgba(157,111,177,255) !important;
 }
 
+.error {
+  color: red;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 @media screen and (max-width: 1120px) {
   .card-container {
     flex-direction: column;

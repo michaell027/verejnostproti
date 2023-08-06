@@ -27,13 +27,13 @@
   <div class="card flex justify-content-center">
     <span class="p-float-label" style="margin-top: 5px; margin-bottom: 25px">
         <input pInputText id="username" [(ngModel)]="storyTitle" style="min-width: 300px" />
-<label htmlFor="username">Nadpis</label>
+        <label htmlFor="username">Nadpis</label>
 
     </span>
     <span class="p-float-label">
 <textarea id="float-input" rows="5" cols="38" style="margin-bottom: 25px; min-height: 40px" pInputTextarea [(ngModel)]="storyDescription"></textarea>
 <label for="float-input">Summary</label>
-
+<p class="error">{{error}}</p>
 
     </span>
     <button class="buttons" (click)="addStory()">Pridať príbeh</button>

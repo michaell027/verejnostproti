@@ -23,6 +23,8 @@ export class StoriesHolderComponent implements OnInit{
 
   value: string | undefined;
 
+  error: string = "";
+
   constructor(private firebaseService: FirebaseService) {}
 
   ngOnInit() {
@@ -44,6 +46,10 @@ export class StoriesHolderComponent implements OnInit{
   }
 
   addStory() {
+    if (this.storyTitle === "" || this.storyDescription === "" || this.storyTitle === undefined || this.storyDescription === undefined || this.storyTitle.trim().length === 0 || this.storyDescription.trim().length === 0) {
+      this.error = "Please fill in all fields!";
+      return;
+    }
     this.firebaseService.addData('stories', {
       title: this.storyTitle,
       description: this.storyDescription,
