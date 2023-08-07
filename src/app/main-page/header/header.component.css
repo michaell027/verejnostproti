@@ -77,9 +77,21 @@ i {
   font-size: 2rem;
 }
 
+navbar-nav{
+
+}
+
 @media (max-width: 991.5px) {
   nav {
     top: 30px;
+  }
+
+  .navbar-nav{
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin: 0
   }
 
   .text {
