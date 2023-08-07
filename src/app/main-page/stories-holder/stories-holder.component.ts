@@ -53,7 +53,7 @@ export class StoriesHolderComponent implements OnInit{
     this.firebaseService.addData('stories', {
       title: this.storyTitle,
       description: this.storyDescription,
-      verified: false, // Automatically set 'verified' to false
+      verified: false,
     });
     this.formVisible = false;
   }

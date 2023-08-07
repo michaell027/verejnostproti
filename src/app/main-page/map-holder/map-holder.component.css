@@ -1,5 +1,6 @@
-.container {
-  margin: 50px;
+.container-fluid {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .img-thumbnail {
@@ -48,10 +49,5 @@ i {
   .map-holder,
   .address-holder {
     text-align: center;
-  }
-
-  .col-md-6 {
-    flex-basis: 100%;
-    max-width: 100%;
   }
 }

@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-google-maps',
   templateUrl: './google-maps.component.html',
   styleUrls: ['./google-maps.component.css']
 })
-export class GoogleMapsComponent {
+export class GoogleMapsComponent implements OnInit{
+
+  constructor(private elementRef: ElementRef) {}
+
   mapCenter: google.maps.LatLngLiteral = {
     lat: 48.726255,
     lng: 21.255966
@@ -13,7 +16,10 @@ export class GoogleMapsComponent {
 
   mapZoom = 16;
 
-  // Súradnice pre marker
+  mapHeight = 400;
+  mapWidth = 400;
+
+
   markerPosition: google.maps.LatLngLiteral = {
     lat: 48.726187,
     lng: 21.254647
@@ -24,7 +30,6 @@ export class GoogleMapsComponent {
 
   markerOptions: google.maps.MarkerOptions = {
     animation: google.maps.Animation.DROP,
-    // icon: 'path_k_obrazku_ikonky.png'
   };
 
   mapOptions: google.maps.MapOptions = {
@@ -37,6 +42,25 @@ export class GoogleMapsComponent {
     // streetViewControl: false,
     styles: [{ featureType: 'poi', elementType: 'labels', stylers: [{ visibility: 'on' }] }],
   };
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.updateMapDimensions();
+  }
+
+  ngOnInit() {
+    this.updateMapDimensions();
+  }
+
+  updateMapDimensions() {
+    // Calculate responsive dimensions based on window size
+    const windowHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;
+
+    // Adjust the dimensions based on your desired responsive behavior
+    this.mapHeight = windowHeight * 0.7;
+    this.mapWidth = windowWidth * 0.8;
+  }
 
   openGoogleMaps() {
     const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(this.markerAddress)}`;
