@@ -19,3 +19,25 @@ p {
   font-size: 18px;
   margin: 15px 0 0;
 }
+
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .button {
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+

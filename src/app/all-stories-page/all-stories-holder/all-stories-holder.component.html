@@ -14,12 +14,37 @@
     </div>
   </div>
   <div class="row justify-content-center mt-4">
-    <p-paginator
+    <p-paginator *ngIf="!isSmallScreen && !isMiniScreen && !isMobileScreen"
       [style]="{}"
       [rows]="storiesPerPage"
       [totalRecords]="data.length"
       [first]="currentPage * storiesPerPage"
       (onPageChange)="onPageChange($event)"
+      [pageLinkSize]=3
+    ></p-paginator>
+
+    <p-paginator *ngIf="isSmallScreen && !isMiniScreen && !isMobileScreen"
+                [style]="{}"
+      [rows]="storiesPerPage"
+      [totalRecords]="data.length"
+      [first]="currentPage * storiesPerPage"
+      (onPageChange)="onPageChange($event)"
+      [pageLinkSize]=0
+      [showJumpToPageDropdown]=true
+                 [showFirstLastIcon]=false
+    ></p-paginator>
+
+    <p-paginator *ngIf="isMiniScreen && !isSmallScreen && !isMobileScreen"
+                [style]="{}"
+      [rows]="storiesPerPage"
+      [totalRecords]="data.length"
+      [first]="currentPage * storiesPerPage"
+      (onPageChange)="onPageChange($event)"
+      [pageLinkSize]=0
+      [showJumpToPageDropdown]=false
+                 [showFirstLastIcon]=false
+                 [showCurrentPageReport]=false
+                 [showJumpToPageInput]=true
     ></p-paginator>
   </div>
 </div>

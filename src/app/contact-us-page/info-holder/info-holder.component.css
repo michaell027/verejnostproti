@@ -135,6 +135,13 @@ i {
   }
 }
 
+@media (max-width: 570px) {
+  .purple-box {
+    padding: 20px 30px;
+    margin-top: 170px;
+  }
+}
+
 @media (max-width: 450px) {
   .background-image {
     height: 1400px;

@@ -15,6 +15,54 @@ h2 {
   padding-top: 40px;
 }
 
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-holder {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.sponsors-holder {
+  flex: 1;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sponsors {
+  text-align: center;
+  flex-direction: column;
+}
+
+.sponsors a,
+.question a  {
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.sponsors a:hover,
+.question a:hover {
+  text-decoration: underline;
+}
+
+.sponsors a:visited,
+.question a:visited {
+  color: black;
+}
+
+
 .address {
   text-align: center;
   font-size: 18px;
@@ -34,10 +82,51 @@ i {
   flex-direction: column;
 }
 
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.question p {
+  font-size: 17px;
+  font-weight: 500;
+  padding-top: 5px;
+  color: inherit;
+  text-align: center;
+}
+
+.question h4 {
+  font-size: 21px;
+  font-weight: 800;
+  padding-top: 10px;
+  color: inherit;
+  text-align: center;
+}
+
+.question h6 {
+  font-size: 19px;
+  font-weight: 700;
+  padding-top: 5px;
+  color: inherit;
+  text-align: center;
+}
+
 @media (max-width: 767px) {
   h2 {
     font-size: 40px;
     padding-top: 20px;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .address-holder,
+  .sponsors-holder {
+    flex: none;
+    width: 100%;
   }
 }
 

@@ -50,6 +50,8 @@ export class StoriesHolderComponent implements OnInit{
   }
 
   showForm() {
+    this.storyTitle = "";
+    this.storyDescription = "";
     this.formVisible = true;
   }
 

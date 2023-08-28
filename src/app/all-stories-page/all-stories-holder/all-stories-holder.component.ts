@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {FirebaseService} from "../../firebase.service";
 import {TruncateTextPipe} from "../../truncate-text.pipe";
 
@@ -14,8 +14,18 @@ export class AllStoriesHolderComponent {
   currentPage = 0;
   storiesPerPage = 1;
   visible: boolean = false;
+  isSmallScreen = false;
+  isMiniScreen = false;
+  isMobileScreen = false;
 
-  constructor(private firebaseService: FirebaseService) {}
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenSize();
+  }
+
+  constructor(private firebaseService: FirebaseService) {
+    this.checkScreenSize();
+  }
 
   ngOnInit() {
     this.loadData();
@@ -30,6 +40,11 @@ export class AllStoriesHolderComponent {
       // Filter out the stories with verified: false
       this.data = data.filter(story => story.verified === "true").sort((a, b) => b.from - a.from);
     });
+  }
+
+  private checkScreenSize() {
+    this.isSmallScreen = window.innerWidth < 520 && window.innerWidth > 360;
+    this.isMiniScreen = window.innerWidth <= 360;
   }
 
 

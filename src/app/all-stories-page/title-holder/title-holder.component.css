@@ -60,6 +60,10 @@
 }
 
 @media (max-width: 992px) {
+  h2 {
+    font-size: 30px !important;
+  }
+
   .row {
     gap: 40px;
   }
@@ -73,5 +77,16 @@
 
   .background-image::before {
     height: 1100px;
+  }
+}
+
+@media (max-width: 560px) {
+  h2 {
+    font-size: 22px !important;
+  }
+
+  .purple-box {
+    padding: 20px 30px;
+    margin-top: 170px;
   }
 }

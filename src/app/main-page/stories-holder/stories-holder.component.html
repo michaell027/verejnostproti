@@ -17,26 +17,26 @@
   <button (click)="showForm()">Pridať príbeh</button>
 </div>
 
-<p-dialog header="{{storyTitle}}" [(visible)]="visible" [style]="{ maxWidth: '60vw', maxHeight: '400px'}">
+<p-dialog header="{{storyTitle}}" [(visible)]="visible" [style]="{ maxWidth: '70vw', maxHeight: '400px'}">
   <p>
     {{storyDescription}}
   </p>
 </p-dialog>
 
-<p-dialog header="Pridaj príbeh" [(visible)]="formVisible" [style]="{ maxWidth: '60vw', maxHeight: '500px'}">
+<p-dialog header="Pridaj príbeh" [(visible)]="formVisible" [style]="{ maxWidth: '70vw', maxHeight: '500px'}">
   <div class="card flex justify-content-center">
-    <span class="p-float-label" style="margin-top: 5px; margin-bottom: 25px">
-        <input pInputText id="username" [(ngModel)]="storyTitle" style="min-width: 300px" />
+    <span class="p-float-label">
+        <input pInputText id="username" [(ngModel)]="storyTitle" />
         <label htmlFor="username">Nadpis</label>
 
     </span>
     <span class="p-float-label">
-<textarea id="float-input" rows="5" cols="38" style="margin-bottom: 25px; min-height: 40px" pInputTextarea [(ngModel)]="storyDescription"></textarea>
+<textarea id="float-input" pInputTextarea [(ngModel)]="storyDescription"></textarea>
 <label for="float-input">Obsah</label>
 <p class="error">{{error}}</p>
 
     </span>
-    <button class="buttons" (click)="addStory()">Pridať príbeh</button>
+    <button class="button-story" (click)="addStory()">Pridať príbeh</button>
   </div>
 
 </p-dialog>
