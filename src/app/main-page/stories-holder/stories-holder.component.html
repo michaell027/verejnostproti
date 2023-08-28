@@ -32,7 +32,7 @@
     </span>
     <span class="p-float-label">
 <textarea id="float-input" rows="5" cols="38" style="margin-bottom: 25px; min-height: 40px" pInputTextarea [(ngModel)]="storyDescription"></textarea>
-<label for="float-input">Summary</label>
+<label for="float-input">Obsah</label>
 <p class="error">{{error}}</p>
 
     </span>
@@ -40,3 +40,8 @@
   </div>
 
 </p-dialog>
+
+
+<div class="card" *ngIf="alert">
+  <p-messages [(value)]="messages1" [enableService]="false" [closable]="true"></p-messages>
+</div>

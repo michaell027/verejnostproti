@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FirebaseService} from "../../firebase.service";
 import { TruncateTextPipe } from '../../truncate-text.pipe';
+import {Message} from "primeng/api";
 
 
 @Component({
@@ -25,7 +26,14 @@ export class StoriesHolderComponent implements OnInit{
 
   error: string = "";
 
+  alert: boolean = false;
+
   constructor(private firebaseService: FirebaseService) {}
+
+  messages1: Message[] = [
+    { severity: 'success', summary: 'Pridané', detail: 'Ak admin overí váš príbeh, uvidíte ho u nás na stránke.' },
+  ];
+
 
   ngOnInit() {
     this.firebaseService.getData('stories').subscribe(data => {
@@ -56,6 +64,7 @@ export class StoriesHolderComponent implements OnInit{
       verified: false,
     });
     this.formVisible = false;
+    this.alert = true;
   }
 
 

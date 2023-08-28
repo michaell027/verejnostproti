@@ -111,24 +111,23 @@ h2 {
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 850px) {
   .background-container {
     height: 500px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h5 {
-    margin-top: 10px;
-    font-size: 15px;
   }
 
   .content-container {
     height: 200px;
     margin: -200px 50px 0 50px;
     padding: 80px 0;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 15px;
   }
 
   .read-more-button {
@@ -142,7 +141,7 @@ h2 {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 600px) {
   .background-container {
     height: 400px;
   }
@@ -152,4 +151,56 @@ h2 {
     margin: -150px 50px 0 50px;
     padding: 80px 0;
   }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .buttons-container {
+    margin-top: 20px;
+  }
+
+  .read-more-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 340px) {
+  h2 {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 10px;
+  }
+
+  .read-more-button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .buttons-container {
+    margin-top: 20px;
+  }
+
+.content-container {
+    height: 200px;
+    margin: -150px 20px 0 20px;
+    padding: 80px 0;
+  }
+
+  .background-container {
+    height: 400px;
+  }
+
+
 }

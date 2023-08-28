@@ -38,6 +38,8 @@ import {PaginatorModule} from "primeng/paginator";
 import { TitleHolderComponent } from './all-stories-page/title-holder/title-holder.component';
 import {DialogModule} from "primeng/dialog";
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import {InputTextareaModule} from "primeng/inputtextarea";
+import {MessagesModule} from "primeng/messages";
 
 
 @NgModule({
@@ -83,6 +85,8 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
     provideFirestore(() => getFirestore()),
     PaginatorModule,
     DialogModule,
+    InputTextareaModule,
+    MessagesModule,
   ],
   providers: [
   ],

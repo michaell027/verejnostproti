@@ -17,6 +17,7 @@ ul {
 }
 
 img {
+  width: 100%;
   border-radius: 50px;
 }
 
@@ -34,7 +35,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: left;
-  padding: 10px 20px;
+  padding: 20px 20px;
   vertical-align: center;
   font-size: 17px;
 }
@@ -45,8 +46,20 @@ img {
 }
 
 @media (max-width: 991.5px) {
+  .img-holder {
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 50%;
+  }
+
   .goals-holder {
     padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h2 {
@@ -54,10 +67,42 @@ img {
   }
 
   .list-group-item {
-    font-size: 12px;
+    font-size: 15px;
+    text-align: center;
   }
 
   .list-group-item i {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .list-group-item {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 10px 10px 0px
+  }
+
+  .list-group-item i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .goals-holder {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .list-group-item {
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 10px 10px 0px
+  }
+
+  .list-group-item i {
+    font-size: 1rem;
   }
 }

@@ -1,23 +1,37 @@
-.title-holder {
-  display: flex;
-  justify-content: start;
-  margin-left: 80px;
-}
 
 h2 {
   padding: 50px 50px 0px 0;
   font-weight: 900;
   font-size: 2.5rem;
-  border-bottom-style: double;
-  border-bottom-color: #9e70ae;
-  border-bottom-width: 4px;
-  margin-bottom: 20px;
+}
+
+.title-holder {
+  margin-left: 100px;
+  max-width: 600px;
+  justify-content: left;
+  text-align: start;
+  margin-bottom: 5px;
+  font-weight: 800;
+  font-size: 50px;
+  padding-left: 35px;
+  border-bottom: rgba(158,112,174,255) solid 4px;
+  border-bottom-style: groove;
+}
+
+p-messages {
+  margin: 0;
+  padding: 0;
+  /*left top fixed*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  z-index: 9999;
 }
 
 .card-container {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
 }
 
 .card {
@@ -60,7 +74,7 @@ button:hover {
   display: flex;
   justify-content: end;
   margin-top: 20px;
-  margin-right: 50px;
+  margin-right: 120px;
 }
 
 .error {
@@ -78,13 +92,13 @@ button:hover {
     align-items: center;
   }
 
-  .buttons-holder {
-    justify-content: center;
-    margin-left: 60px;
+  .card {
+    max-width: 50%;
   }
 
   .title-holder {
-    margin-left: 0;
+    margin-left: 100px;
+    margin-bottom: 20px;
     margin-right: 0;
     justify-content: center;
   }
@@ -96,11 +110,35 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .title-holder {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .buttons-holder {
+    margin-right: 0;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 580px) {
   .title-holder {
-    margin-left: 0;
-    margin-right: 0;
-    justify-content: left;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    justify-content: center;
+  }
+
+  .buttons-holder {
+    justify-content: right;
+    margin-right: 60px;
   }
 
   .card-container {
@@ -110,4 +148,58 @@ button:hover {
   .card {
     max-width: 100%;
   }
+
+  button {
+    font-size: 13px;
+    padding: 8px 16px 8px 16px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .buttons {
+    font-size: 13px;
+    padding: 8px 16px 8px 16px;
+  }
 }
+
+@media screen and (max-width: 450px) {
+  .buttons-holder {
+    justify-content: left;
+    margin-left: 30px;
+  }
+
+  button {
+    font-size: 13px;
+    padding: 8px 16px 8px 16px;
+  }
+
+  .buttons {
+    font-size: 13px;
+    padding: 8px 16px 8px 16px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .buttons-holder {
+    justify-content: left;
+    margin-left: 20px;
+  }
+
+  button {
+    font-size: 11.5px;
+    padding: 6px 12px 6px 12px;
+  }
+
+  .buttons {
+    font-size: 12px;
+    padding: 6px 12px 6px 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
+
+
