@@ -38,11 +38,22 @@ h2 {
 }
 
 .sponsors {
+  margin-top: 15px;
   text-align: center;
   flex-direction: column;
 }
 
-.sponsors a,
+.sponsors img {
+  width: 80px;
+  height: auto;
+  margin-left: 20px;
+  transition: transform 0.4s;
+}
+
+img:hover {
+  transform: scale(1.15);
+}
+
 .question a  {
   display: block;
   color: black;
@@ -52,7 +63,6 @@ h2 {
   font-weight: 300;
 }
 
-.sponsors a:hover,
 .question a:hover {
   text-decoration: underline;
 }
@@ -87,7 +97,7 @@ i {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 70px;
 }
 
 .question p {
