@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class VideoHolderComponent {
 
+  redirect() {
+    window.location.href = '/aboutPage';
+  }
 }

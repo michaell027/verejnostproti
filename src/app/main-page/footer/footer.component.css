@@ -15,6 +15,13 @@ h5 {
 
 a {
   color: white !important;
+  text-decoration: none !important;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a:focus,
