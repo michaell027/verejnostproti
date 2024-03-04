@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  height: max-content;
+  background: #9e70ae;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.campaign-title {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.campaign-holder {
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 0;
+  display: flex;
+}
+
+.divider-holder {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.divider {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #fff, transparent);
+}
+
+.divider-text {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+.divider-text:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    margin-top: 75px;
+  }
+}

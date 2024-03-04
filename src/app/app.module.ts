@@ -46,6 +46,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { MessagesModule } from 'primeng/messages';
 import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
 import { environment } from '../environments/environment';
+import { CampaignComponent } from './main-page/campaign/campaign.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { environment } from '../environments/environment';
     TitleHolderComponent,
     AdminPageComponent,
     SponsorsPageComponent,
+    CampaignComponent,
   ],
   imports: [
     BrowserModule,
