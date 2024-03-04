@@ -1,15 +1,1 @@
-<google-map
-  [center]="mapCenter"
-  [zoom]="mapZoom"
-  [options]="mapOptions"
-  [height]="mapHeight"
-  [width]="mapWidth"
->
-  <map-marker
-    [position]="markerPosition"
-    [title]="markerTitle"
-    [options]="markerOptions"
-    (mapClick)="openGoogleMaps()"
-  ></map-marker>
-
-</google-map>
+<div id="map" [style.height.px]="mapHeight" [style.width.px]="mapWidth"></div>

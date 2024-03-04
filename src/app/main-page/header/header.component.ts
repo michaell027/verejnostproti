@@ -1,16 +1,15 @@
-import {Component, HostListener, OnInit} from '@angular/core';
-import { MenuItem } from 'primeng/api';
-
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent{
+export class HeaderComponent {
   navItems = [
+    { label: 'Sponzori', route: 'sponsorsPage' },
     { label: 'O nás', route: 'aboutPage' },
-    { label: 'Kontaktujte nás', route: '/contactPage' }
+    { label: 'Kontaktujte nás', route: '/contactPage' },
   ];
 
   showMenu = false;

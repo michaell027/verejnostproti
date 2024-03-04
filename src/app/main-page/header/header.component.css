@@ -24,11 +24,13 @@ nav {
 .logo-big {
   transform: scale(1);
   transition: transform 1s ease;
+  border-radius: 50%;
 }
 
 .logo-small {
   transform: scale(0.5);
   transition: transform 1s ease;
+  border-radius: 50%;
 }
 
 .text-big {

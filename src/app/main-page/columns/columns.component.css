@@ -17,6 +17,12 @@
   justify-content: center;
   height: 100%;
   z-index: 1;
+  transition: transform 0.4s;
+}
+
+.column:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .circle {

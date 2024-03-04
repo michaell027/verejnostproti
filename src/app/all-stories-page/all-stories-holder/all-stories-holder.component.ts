@@ -37,7 +37,6 @@ export class AllStoriesHolderComponent {
 
   loadData() {
     this.firebaseService.getData('stories').subscribe((data: any[]) => {
-      // Filter out the stories with verified: false
       this.data = data.filter(story => story.verified === "true").sort((a, b) => b.from - a.from);
     });
   }

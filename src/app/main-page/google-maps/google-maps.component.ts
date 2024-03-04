@@ -1,69 +1,97 @@
-import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Loader } from '@googlemaps/js-api-loader';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-google-maps',
   templateUrl: './google-maps.component.html',
-  styleUrls: ['./google-maps.component.css']
+  styleUrls: ['./google-maps.component.css'],
 })
-export class GoogleMapsComponent implements OnInit{
-
-  constructor(private elementRef: ElementRef) {}
-
-  mapCenter: google.maps.LatLngLiteral = {
-    lat: 48.726255,
-    lng: 21.255966
-  };
-
-  mapZoom = 16;
+export class GoogleMapsComponent implements OnInit {
+  map?: google.maps.Map;
+  marker?: google.maps.Marker;
 
   mapHeight = 400;
   mapWidth = 400;
 
-
-  markerPosition: google.maps.LatLngLiteral = {
-    lat: 48.726187,
-    lng: 21.254647
-  };
-
-  markerAddress = 'New York, NY';
-  markerTitle = 'Môj marker';
-
-  markerOptions: google.maps.MarkerOptions = {
-    animation: google.maps.Animation.DROP,
-  };
-
-  mapOptions: google.maps.MapOptions = {
-    // mapTypeId: 'terrain',
-    zoomControl: true,
-    scrollwheel: true,
-    disableDoubleClickZoom: true,
-    draggable: true,
-    // panControl: true,
-    // streetViewControl: false,
-    styles: [{ featureType: 'poi', elementType: 'labels', stylers: [{ visibility: 'on' }] }],
-  };
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.updateMapDimensions();
-  }
+  constructor() {}
 
   ngOnInit() {
+    const loader = new Loader({
+      apiKey: environment.googleMapsApiKey,
+      version: 'weekly',
+    });
+
+    loader.load().then(() => {
+      const mapCenter: google.maps.LatLngLiteral = {
+        lat: 48.726255,
+        lng: 21.255966,
+      };
+
+      const markerPosition: google.maps.LatLngLiteral = {
+        lat: 48.726187,
+        lng: 21.254647,
+      };
+
+      const markerOptions: google.maps.MarkerOptions = {
+        animation: google.maps.Animation.DROP,
+      };
+
+      const mapOptions: google.maps.MapOptions = {
+        zoomControl: true,
+        scrollwheel: true,
+        disableDoubleClickZoom: true,
+        draggable: true,
+        styles: [
+          {
+            featureType: 'poi',
+            elementType: 'labels',
+            stylers: [{ visibility: 'on' }],
+          },
+        ],
+      };
+
+      this.map = new google.maps.Map(
+        document.getElementById('map') as HTMLElement,
+        {
+          ...mapOptions,
+          center: mapCenter,
+          zoom: 16,
+        },
+      );
+
+      this.marker = new google.maps.Marker({
+        position: markerPosition,
+        map: this.map,
+        title: 'Môj marker',
+        // Spread options directly
+        animation: google.maps.Animation.DROP,
+      });
+
+      this.marker.addListener('click', () => {
+        this.openGoogleMaps();
+      });
+    });
+
     this.updateMapDimensions();
+    window.addEventListener('resize', this.updateMapDimensions.bind(this));
   }
 
   updateMapDimensions() {
-    // Calculate responsive dimensions based on window size
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth;
 
-    // Adjust the dimensions based on your desired responsive behavior
     this.mapHeight = windowHeight * 0.7;
     this.mapWidth = windowWidth * 0.8;
   }
 
   openGoogleMaps() {
-    const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(this.markerAddress)}`;
-    window.open(url, '_blank');
+    if (this.marker) {
+      const markerPosition = this.marker.getPosition();
+      if (markerPosition) {
+        const url = `https://www.google.com/maps/search/?api=1&query=${markerPosition.lat()},${markerPosition.lng()}`;
+        window.open(url, '_blank');
+      }
+    }
   }
 }
