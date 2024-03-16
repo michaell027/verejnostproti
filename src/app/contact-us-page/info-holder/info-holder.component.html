@@ -2,32 +2,54 @@
   <div class="background-image">
     <div class="content">
       <div class="purple-box">
-        <h2 class="about-us-heading text-uppercase">Contact us:</h2>
+        <h2 class="about-us-heading text-uppercase">Kontaktujte nás:</h2>
       </div>
       <div class="white-column">
-        <div class="column-gap-4">
-          <div class="">
+        <div class="row">
+          <div id="map-holder-parent" class="col-lg-6 col-md-12">
             <app-google-maps></app-google-maps>
           </div>
-          <div class="">
+          <div class="col-lg-6 col-md-12">
             <div class="address-holder">
-              <div class="address column-gap-1" style="color: white; z-index: 1">
-                <h4 class="text-uppercase fw-bold" style="margin-top: 50px">Potrebujete pomoc?</h4>
-                <i class="pi pi-angle-down" style="margin-top: 5px"></i> <br><br>
+              <div
+                class="address column-gap-1"
+                style="color: white; z-index: 1"
+              >
+                <!--                <h4 class="text-uppercase fw-bold" style="margin-top: 50px">-->
+                <!--                  Potrebujete pomoc?-->
+                <!--                </h4>-->
+                <!--                <i class="pi pi-angle-down" style="margin-top: 5px"></i>-->
+                <!--                <br /><br />-->
                 <i class="pi pi-map-marker" style="margin-top: 5px"></i>
-                <p>Bačíkova 59/2, <br> 040 01 Košice-Staré Mesto</p>
+                <p>
+                  Bačíkova 59/2, <br />
+                  040 01 Košice-Staré Mesto
+                </p>
                 <i class="pi pi-phone" style="margin-top: 15px"></i>
-                <p>+421 951 011 560</p>
+                <p><a href="tel:+421 951 011 560">+421 951 011 560</a></p>
                 <i class="pi pi-at" style="margin-top: 15px"></i>
-                <p>verejnostproti@gmail.com</p>
+                <p>
+                  <a href="mailto:arvai@verejnostproti.com"
+                    >arvai@verejnostproti.com</a
+                  >
+                </p>
               </div>
             </div>
+          </div>
         </div>
-
       </div>
 
+      <div class="purple-box">
+        <h2 class="about-us-heading text-uppercase">Potrebujete pomôcť?</h2>
+      </div>
+      <div class="white-circle pi pi-angle-down"></div>
+      <div class="help-column">
+        <p>
+          <a class="help-mail" href="mailto:pomoc@verejnostproti.com"
+            >pomoc@verejnostproti.com</a
+          >
+        </p>
+      </div>
     </div>
   </div>
-
-</div>
 </div>

@@ -63,7 +63,7 @@ export class GoogleMapsComponent implements OnInit {
       this.marker = new google.maps.Marker({
         position: markerPosition,
         map: this.map,
-        title: 'Môj marker',
+        title: 'Verejnosť proti',
         // Spread options directly
         animation: google.maps.Animation.DROP,
       });
@@ -78,11 +78,18 @@ export class GoogleMapsComponent implements OnInit {
   }
 
   updateMapDimensions() {
-    const windowHeight = window.innerHeight;
-    const windowWidth = window.innerWidth;
+    const parentDiv = document.getElementById('map-holder-parent');
+    if (parentDiv) {
+      const parentWidth = parentDiv.getBoundingClientRect().width;
+      this.mapWidth = parentWidth * 0.9;
+      this.mapHeight = parentWidth * 0.85;
+    } else {
+      const windowHeight = window.innerHeight;
+      const windowWidth = window.innerWidth;
 
-    this.mapHeight = windowHeight * 0.7;
-    this.mapWidth = windowWidth * 0.8;
+      this.mapHeight = windowHeight * 0.7;
+      this.mapWidth = windowWidth * 0.8;
+    }
   }
 
   openGoogleMaps() {
