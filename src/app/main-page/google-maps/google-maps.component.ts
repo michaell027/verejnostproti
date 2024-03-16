@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
 import { environment } from '../../../environments/environment';
+import * as process from 'process';
 
 @Component({
   selector: 'app-google-maps',
@@ -17,8 +18,12 @@ export class GoogleMapsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    if (!process.env['GOOGLE_MAPS_API_KEY']) {
+      console.error('GOOGLE_MAPS_API_KEY is not set');
+      return;
+    }
     const loader = new Loader({
-      apiKey: environment.googleMapsApiKey,
+      apiKey: process.env['GOOGLE_MAPS_API_KEY'],
       version: 'weekly',
     });
 

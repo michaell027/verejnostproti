@@ -43,4 +43,9 @@ Thumbs.db
 
 # Api files
 /src/api
-/src/environments
+
+# env files
+.env
+.env.prod
+.env.dev
+.env.local
