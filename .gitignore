@@ -49,3 +49,5 @@ Thumbs.db
 .env.prod
 .env.dev
 .env.local
+
+.firebase/

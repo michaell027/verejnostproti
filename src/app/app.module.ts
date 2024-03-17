@@ -47,6 +47,7 @@ import { MessagesModule } from 'primeng/messages';
 import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
 import { environment } from '../environments/environment';
 import { CampaignComponent } from './main-page/campaign/campaign.component';
+import { ReportageHolderComponent } from './main-page/reportage-holder/reportage-holder.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +75,7 @@ import { CampaignComponent } from './main-page/campaign/campaign.component';
     AdminPageComponent,
     SponsorsPageComponent,
     CampaignComponent,
+    ReportageHolderComponent,
   ],
   imports: [
     BrowserModule,
