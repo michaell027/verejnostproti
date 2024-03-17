@@ -1,0 +1,207 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
+  height: 750px;
+  background-image: url("https://content.api.news/v3/images/bin/a34bc0eca5932acd1072f177fbd9a7a7");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.purple-box {
+  background-color: rgba(81, 15, 78, 0.7);
+  margin-top: 180px;
+  padding: 30px 50px;
+  border-radius: 8px;
+  margin-bottom: 70px;
+  z-index: 1;
+}
+
+.about-us-heading {
+  color: white;
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-column {
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+}
+
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 750px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1184px) {
+  .background-image {
+    height: 800px;
+  }
+
+  .background-image::before {
+    height: 800px;
+  }
+}
+
+@media (max-width: 992px) {
+  .background-image {
+    height: 750px;
+  }
+
+  .white-column {
+    max-width: 800px;
+  }
+
+  .background-image::before {
+    height: 750px;
+  }
+
+  .about-us-heading {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 731px) {
+  .background-image {
+    height: 800px;
+  }
+
+  .white-column {
+    max-width: 600px;
+  }
+
+  .background-image::before {
+    height: 800px;
+  }
+
+  .about-us-heading {
+    font-size: 27px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 570px) {
+  .purple-box {
+    padding: 20px 30px;
+    margin-top: 170px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .background-image {
+    height: 850px;
+  }
+
+  .background-image::before {
+    height: 850px;
+  }
+}
+
+@media (max-width: 460px) {
+  .background-image {
+    height: 750px;
+  }
+
+  .white-column {
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .background-image::before {
+    height: 750px;
+  }
+
+  .about-us-heading {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 391px) {
+  .background-image {
+    height: 850px;
+  }
+
+  .background-image::before {
+    height: 850px;
+  }
+}
+
+@media (max-width: 343px) {
+  .background-image {
+    height: 900px;
+  }
+
+  .background-image::before {
+    height: 900px;
+  }
+}
+
+@media (max-width: 312px) {
+  .background-image {
+    height: 950px;
+  }
+
+  .background-image::before {
+    height: 950px;
+  }
+}
+
+@media (max-width: 278px) {
+  .background-image {
+    height: 1000px;
+  }
+
+  .background-image::before {
+    height: 1000px;
+  }
+}

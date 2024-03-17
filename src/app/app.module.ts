@@ -48,6 +48,8 @@ import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
 import { environment } from '../environments/environment';
 import { CampaignComponent } from './main-page/campaign/campaign.component';
 import { ReportageHolderComponent } from './main-page/reportage-holder/reportage-holder.component';
+import { EventsPageComponent } from './events-page/events-page.component';
+import { EventsHeadingComponent } from './events-page/events-heading/events-heading.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +78,8 @@ import { ReportageHolderComponent } from './main-page/reportage-holder/reportage
     SponsorsPageComponent,
     CampaignComponent,
     ReportageHolderComponent,
+    EventsPageComponent,
+    EventsHeadingComponent,
   ],
   imports: [
     BrowserModule,

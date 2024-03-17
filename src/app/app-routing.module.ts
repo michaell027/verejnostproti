@@ -6,6 +6,7 @@ import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { AllStoriesPageComponent } from './all-stories-page/all-stories-page.component';
 import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
+import { EventsPageComponent } from './events-page/events-page.component';
 
 const routes: Routes = [
   { path: 'homePage', component: MainPageComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'contactPage', component: ContactUsPageComponent },
   { path: 'storiesPage', component: AllStoriesPageComponent },
   { path: 'sponsorsPage', component: SponsorsPageComponent },
+  { path: 'eventsPage', component: EventsPageComponent },
 
   { path: '**', component: MainPageComponent, canActivate: [MyAuthGuard] },
 ];
