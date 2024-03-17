@@ -50,6 +50,8 @@ import { CampaignComponent } from './main-page/campaign/campaign.component';
 import { ReportageHolderComponent } from './main-page/reportage-holder/reportage-holder.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { EventsHeadingComponent } from './events-page/events-heading/events-heading.component';
+import { WomensDayComponent } from './events-page/womens-day/womens-day.component';
+import { NgOptimizedImage } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -80,6 +82,7 @@ import { EventsHeadingComponent } from './events-page/events-heading/events-head
     ReportageHolderComponent,
     EventsPageComponent,
     EventsHeadingComponent,
+    WomensDayComponent,
   ],
   imports: [
     BrowserModule,
@@ -101,6 +104,7 @@ import { EventsHeadingComponent } from './events-page/events-heading/events-head
     DialogModule,
     InputTextareaModule,
     MessagesModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent],
