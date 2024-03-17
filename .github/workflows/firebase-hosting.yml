@@ -39,6 +39,7 @@ jobs:
           echo "FIREBASE_APP_ID=$FIREBASE_APP_ID" >> .env
           echo "FIREBASE_MEASUREMENT_ID=$FIREBASE_MEASUREMENT_ID" >> .env
           echo "GOOGLE_MAPS_API_KEY=$GOOGLE_MAPS_API_KEY" >> .env
+          echo "FIREBASE_TOKEN=$FIREBASE_TOKEN" >> .env
 
       - name: Install Dependencies
         run: npm install
@@ -49,5 +50,4 @@ jobs:
       - name: Firebase Deploy
         run: |
           npm install -g firebase-tools
-          npx firebase login:ci --token "$FIREBASE_TOKEN"
           firebase deploy --token "$FIREBASE_TOKEN"
