@@ -6,6 +6,13 @@
     "verejnostproti": {
       "projectType": "application",
       "schematics": {},
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "sk": "src/assets/i18n/sk.json",
+          "es": "src/assets/i18n/en.json"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

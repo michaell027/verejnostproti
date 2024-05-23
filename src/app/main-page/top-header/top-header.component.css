@@ -7,14 +7,20 @@
   opacity: 0.85;
 }
 
+.lang:hover {
+  color: #9e70ae !important;
+}
+
+.active {
+  color: #9e70ae !important;
+}
+
 .navbar-brand {
   font-size: 15px;
 }
 
 .phone-help-center {
-  flex: 0;
   display: flex;
-  justify-content: flex-end;
 }
 
 .phone-number {
@@ -34,13 +40,14 @@ a i {
   padding-left: 20px;
 }
 
-.pi-map-marker, .pi-phone {
+.pi-map-marker,
+.pi-phone {
   font-size: 16px;
 }
 
 .pi-map-marker {
   padding-left: 20px;
-  padding-right: 5px
+  padding-right: 5px;
 }
 
 .pi-phone {
@@ -62,7 +69,8 @@ a i {
     font-size: 10px;
   }
 
-  .pi-map-marker, .pi-phone {
+  .pi-map-marker,
+  .pi-phone {
     font-size: 12px;
   }
 
