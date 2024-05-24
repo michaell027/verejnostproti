@@ -5,20 +5,20 @@
     alt="Background Image"
   />
   <div class="content-container">
-    <h5 class="text-uppercase font-monospace">Verejnosť proti</h5>
-    <h2 class="text-uppercase font-monospace fw-bold">NECHCEME ZNEUŽÍVANIE</h2>
+    <h5 class="text-uppercase font-monospace">{{ 'homePage.content.title' | translate }}</h5>
+    <h2 class="text-uppercase font-monospace fw-bold">{{ 'homePage.content.subtitle' | translate }}</h2>
     <div class="buttons-container">
       <button
         pButton
         type="button"
-        label="O NÁS"
+        [label]="'homePage.content.buttons.about' | translate"
         class="read-more-button"
         (click)="openAboutUsPage()"
       ></button>
       <button
         pButton
         type="button"
-        label="PODPORTE NÁS"
+        label="{{ 'homePage.content.buttons.donate' | translate }}"
         class="read-more-button"
         (click)="open4FunPage()"
       ></button>

@@ -1,19 +1,34 @@
 <div id="goals" class="container mt-5 holder">
   <div class="row">
     <div class="col-lg-5">
-      <h2 class="text-uppercase">Naše ciele:</h2>
+      <h2 class="text-uppercase">{{ "homePage.goals.title" | translate }}</h2>
       <div class="img-holder">
-      <img src="/assets/images/daniel_podpis_zmluvy.jpg" alt="Fotka" class="img-fluid mt-3">
+        <img
+          src="/assets/images/daniel_podpis_zmluvy.jpg"
+          alt="Fotka"
+          class="img-fluid mt-3"
+        />
       </div>
     </div>
     <div class="col-lg-7">
       <ul class="goals-holder">
-        <li class="list-group-item"><span><i class="pi pi-check-circle"></i></span>Vytvoriť komunitu ľudí, ktorá bude proti sexuálnemu zneužívaniu a obťažovaniu</li>
-        <li class="list-group-item"><span><i class="pi pi-check-circle"></i></span>Založiť občianske združenie</li>
-        <li class="list-group-item"><span><i class="pi pi-circle"></i></span>Zvýšiť tresty za sexuálne zneužívanie a obťažovanie bez podmienok</li>
-        <li class="list-group-item"><span><i class="pi pi-circle"></i></span>Spravodlivé "odškodné" za sexuálne zneužívanie a obťažovanie</li>
+        <li class="list-group-item">
+          <span><i class="pi pi-check-circle"></i></span
+          >{{ "homePage.goals.first" | translate }}
+        </li>
+        <li class="list-group-item">
+          <span><i class="pi pi-check-circle"></i></span>
+          {{ "homePage.goals.second" | translate }}
+        </li>
+        <li class="list-group-item">
+          <span><i class="pi pi-circle"></i></span>
+          {{ "homePage.goals.third" | translate }}
+        </li>
+        <li class="list-group-item">
+          <span><i class="pi pi-circle"></i></span>
+          {{ "homePage.goals.fourth" | translate }}
+        </li>
       </ul>
-
     </div>
   </div>
 </div>

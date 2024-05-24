@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
-import { environment } from '../../../environments/environment';
 import * as process from 'process';
 
 @Component({

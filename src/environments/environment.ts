@@ -2,6 +2,6 @@ import { firebaseConfig } from './firebase-config';
 
 export const environment = {
   production: false,
-  googleMapsApiKey: 'AIzaSyD0OON2xQBP5JsxjpuDazuw8splGvGW-T4',
+  googleMapsApiKey: process.env['GOOGLE_MAPS_API_KEY'],
   firebaseConfig: firebaseConfig,
 };

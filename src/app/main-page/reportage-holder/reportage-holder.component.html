@@ -2,22 +2,23 @@
   <div class="row">
     <div class="col-md-5 text-black text-holder" style="padding: 0">
       <h4 class="text-uppercase">
-        Ak by ste sa chceli o nás dozvedieť viacej, na MDŽ 2024 bola o nás
-        natočená reportáž.
+        {{ "homePage.reportage.title" | translate }}
       </h4>
       <p>
-        Na Medzinárodný deň žien sme sa rozhodli náhodným ženám rozdávať kvety a
-        letáky, aby sme upriamili pozornosť na problematiku sexuálneho
-        obťažovania. Spolupracujeme s právnikmi a psychológmi a aktívne
-        podporujeme výchovu k úcte ku ženám už od útleho veku prostredníctvom
-        našich aktivít.
+        {{ "homePage.reportage.content" | translate }}
       </p>
       <div class="row align-items-center">
         <div class="col-md-5 col-12 left-col">
           <p class="my-auto">
-            <span class="question"><strong>Chcete vedieť viac?</strong></span>
+            <span class="question"
+              ><strong>{{
+                "homePage.reportage.footer.title" | translate
+              }}</strong></span
+            >
             <br />
-            <span class="question-text">Pozrite si sekciu udalosti.</span>
+            <span class="question-text">
+              {{ "homePage.reportage.footer.subtitle" | translate }}
+            </span>
           </p>
         </div>
         <div
@@ -35,7 +36,7 @@
             type="button"
             class="read-more-button"
           >
-            Udalosti
+            {{ "homePage.reportage.footer.button" | translate }}
           </button>
         </div>
       </div>

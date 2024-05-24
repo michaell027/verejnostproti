@@ -45,7 +45,6 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { MessagesModule } from 'primeng/messages';
 import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
-import { environment } from '../environments/environment';
 import { CampaignComponent } from './main-page/campaign/campaign.component';
 import { ReportageHolderComponent } from './main-page/reportage-holder/reportage-holder.component';
 import { EventsPageComponent } from './events-page/events-page.component';
