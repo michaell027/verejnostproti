@@ -6,11 +6,37 @@
       <i class="pi pi-phone"></i>
       +421 951 011 560
     </div>
-    <div class="phone-help-center text-white">
-      <a href="" target="_blank"><i class="pi pi-facebook"></i></a>
-      <a href="https://www.instagram.com/verejnost_proti/" target="_blank"><i class="pi pi-instagram"></i></a>
-      <a href="https://t.me/+59-D0M9xAS82Nzdk" target="_blank"><i class="pi pi-telegram"></i></a>
-
+    <div class="row gap-2 d-flex justify-content-center align-items-centers">
+      <div class="col">
+        <div class="phone-help-center text-white">
+          <a href="" target="_blank"><i class="pi pi-facebook"></i></a>
+          <a href="https://www.instagram.com/verejnost_proti/" target="_blank"
+            ><i class="pi pi-instagram"></i
+          ></a>
+          <a href="https://t.me/+59-D0M9xAS82Nzdk" target="_blank"
+            ><i class="pi pi-telegram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="col text-white">
+        <div class="d-flex justify-content-center gap-2">
+          <button
+            class="lang m-0 bg-transparent text-white border-0 p-0"
+            [ngClass]="{ active: currentLang === 'sk' }"
+            (click)="changeLang('sk')"
+          >
+            SK
+          </button>
+          <p class="m-0">|</p>
+          <button
+            class="lang m-0 bg-transparent text-white border-0 p-0"
+            [ngClass]="{ active: currentLang === 'en' }"
+            (click)="changeLang('en')"
+          >
+            EN
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </nav>

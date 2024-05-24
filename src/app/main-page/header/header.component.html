@@ -4,9 +4,9 @@
         <img src="assets/images/vp_logo.png" [ngClass]="{'logo-big': !scrolled, 'logo-small': scrolled}" (click)="goHome()">
       </a>
       <div class="text">
-        <h2 class="text-white font-monospace fw-bold" style="margin-bottom: 0;" [ngClass]="{'text-big': !scrolled, 'text-small': scrolled}">VEREJNOSŤ PROTI</h2>
+        <h2 class="text-white font-monospace fw-bold" style="margin-bottom: 0;" [ngClass]="{'text-big': !scrolled, 'text-small': scrolled}">{{ 'homePage.header.title' | translate }}</h2>
         <p class="font-monospace text-white text-mobile" style="margin-top: 0;">
-          sexuálnemu zneužívaniu a obťažovaniu
+          {{ 'homePage.header.subtitle' | translate }}
         </p>
       </div>
 
@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" [ngClass]="{'show': showMenu}" (click)="closeMenu()" style="justify-content: flex-end;">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" *ngFor="let item of navItems">
-            <a class="nav-link text-white" style="margin-right: 30px" [href]="item.route" >{{ item.label }}</a>
+            <a class="nav-link text-white" style="margin-right: 30px" [href]="item.route" >{{ item.label | translate }}</a>
           </li>
         </ul>
       </div>

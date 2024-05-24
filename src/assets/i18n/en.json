@@ -1,0 +1,88 @@
+{
+  "homePage": {
+    "header": {
+      "title": "PUBLIC AGAINST",
+      "subtitle": "sexual abuse and harassment",
+      "menu": {
+        "about": "About us",
+        "sponsors": "Sponsors",
+        "events": "Events",
+        "contact": "Contact"
+      }
+    },
+    "content": {
+      "title": "PUBLIC AGAINST",
+      "subtitle": "WE DON'T WANT ABUSE",
+      "buttons": {
+        "about": "About us",
+        "donate": "Support us"
+      }
+    },
+    "columns": {
+      "first": {
+        "title": "Support Us",
+        "content": "Support us with a voluntary contribution or become our PARTNER."
+      },
+      "second": {
+        "title": "Join Us",
+        "content": "Join our community and stay informed about our activities."
+      },
+      "third": {
+        "title": "Need Help",
+        "content": "Need legal assistance or advice? Contact us."
+      }
+    },
+    "campaign": {
+      "title": "WE ARE CURRENTLY RUNNING A CAMPAIGN:",
+      "link": "Support Us"
+    },
+    "video": {
+      "subtitle": "WATCH OUR WINNING VIDEO",
+      "title": "STOP SEXUAL ABUSE",
+      "content": "In this video, we focus on the importance of people coming together to create a safer environment for everyone. We support discussions and collaboration against sexual abuse and harassment for positive change. This video marks the beginning of our commitment to achieve a fairer and safer future for all.",
+      "signature": "Public Against",
+      "button": "About Us",
+      "videoTitle": "Current situation in Slovakia"
+    },
+    "goals": {
+      "title": "OUR GOALS:",
+      "first": "To build a community of people who stand against sexual abuse and harassment",
+      "second": "To establish a civic association",
+      "third": "To increase penalties for sexual abuse and harassment without conditions",
+      "fourth": "Fair \"compensation\" for sexual abuse and harassment"
+    },
+    "reportage": {
+      "title": "IF YOU WOULD LIKE TO LEARN MORE ABOUT US, A REPORT WAS FILMED ABOUT US ON INTERNATIONAL WOMEN'S DAY 2024.",
+      "content": "On International Women's Day, we decided to distribute flowers and leaflets to random women to draw attention to the issue of sexual harassment. We collaborate with lawyers and psychologists and actively promote respect for women from a young age through our activities.",
+      "footer": {
+        "title": "Want to know more?",
+        "subtitle": "Check out the events section.",
+        "button": "Events"
+      }
+    },
+    "stories": {
+      "title": "YOUR STORIES:",
+      "buttons": {
+        "more": "Read More",
+        "add": "Add Story"
+      },
+      "story": {
+        "button": "Read More"
+      }
+    },
+    "info": {
+      "left": {
+        "title": "Get in touch:"
+      },
+      "right": {
+        "title": "Sponsors:",
+        "subtitle": "Interested in becoming our sponsor?",
+        "contact": "Contact:"
+      }
+    },
+    "footer": {
+      "title": "© PUBLIC AGAINST SEXUAL ABUSE AND HARASSMENT",
+      "author": "Created by: "
+    }
+  }
+}

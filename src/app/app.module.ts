@@ -45,13 +45,20 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { MessagesModule } from 'primeng/messages';
 import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
-import { environment } from '../environments/environment';
 import { CampaignComponent } from './main-page/campaign/campaign.component';
 import { ReportageHolderComponent } from './main-page/reportage-holder/reportage-holder.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { EventsHeadingComponent } from './events-page/events-heading/events-heading.component';
 import { WomensDayComponent } from './events-page/womens-day/womens-day.component';
 import { NgOptimizedImage } from '@angular/common';
+
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -105,6 +112,14 @@ import { NgOptimizedImage } from '@angular/common';
     InputTextareaModule,
     MessagesModule,
     NgOptimizedImage,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,88 @@
+{
+  "homePage": {
+    "header": {
+      "title": "VEREJNOSŤ PROTI",
+      "subtitle": "sexuálnemu zneužívaniu a obťažovaniu",
+      "menu": {
+        "about": "O nás",
+        "sponsors": "Sponzori",
+        "events": "Udalosti",
+        "contact": "Kontakt"
+      }
+    },
+    "content": {
+      "title": "VEREJNOSŤ PROTI",
+      "subtitle": "NECHCEME ZNEUŽÍVANIE",
+      "buttons": {
+        "about": "O nás",
+        "donate": "Podporte nás"
+      }
+    },
+    "columns": {
+      "first": {
+        "title": "Podporte nás",
+        "content": "Podporte nás ľubovoľným príspevkom alebo sa staňte našim PARTNEROM."
+      },
+      "second": {
+        "title": "Pridajte sa k nám",
+        "content": "Pripojte sa k našej komunite a buďte vždy informovaný o našej činnosti."
+      },
+      "third": {
+        "title": "Potrebujem pomoc",
+        "content": "Potrebujete právnu pomoc alebo sa potrebujete poradiť? Napíšte nám."
+      }
+    },
+    "campaign": {
+      "title": "PRÁVE MÁME ROZBEHNUTÚ KAMPAŇ:",
+      "link": "Podporte nás"
+    },
+    "video": {
+      "subtitle": "POZRITE SI NAŠE VÍŤAZNÉ VIDEO",
+      "title": "ZASTAVME SEXUÁLNE ZNEUŽÍVANIE",
+      "content": "V tomto videu sa zameriame na dôležitosť ľudí, spoločnou silou dosiahneme bezpečnejšie prostredie pre všetkých. Podporujeme diskusie a spoluprácu proti sexuálnemu zneužívaniu a obťažovaniu pre pozitívne zmeny. Toto video je začiatkom našej odhodlanosti dosiahnuť spravodlivejšiu a bezpečnejšiu budúcnosť pre všetkých.",
+      "signature": "Verejnosť Proti",
+      "button": "O nás",
+      "videoTitle": "Aktuálna situácia na Slovensku"
+    },
+    "goals": {
+      "title": "NAŠE CIELE:",
+      "first": "Vytvoriť komunitu ľudí, ktorá bude proti sexuálnemu zneužívaniu a obťažovaniu",
+      "second": "Založiť občianske združenie",
+      "third": "Zvýšiť tresty za sexuálne zneužívanie a obťažovanie bez podmienok",
+      "fourth": "Spravodlivé \"odškodné\" za sexuálne zneužívanie a obťažovanie"
+    },
+    "reportage": {
+      "title": "AK BY STE SA CHCELI O NÁS DOZVEDIEŤ VIACEJ, NA MDŽ 2024 BOLA O NÁS NATOČENÁ REPORTÁŽ.",
+      "content": "Na Medzinárodný deň žien sme sa rozhodli náhodným ženám rozdávať kvety a letáky, aby sme upriamili pozornosť na problematiku sexuálneho obťažovania. Spolupracujeme s právnikmi a psychológmi a aktívne podporujeme výchovu k úcte ku ženám už od útleho veku prostredníctvom našich aktivít.",
+      "footer": {
+        "title": "Chcete vedieť viac?",
+        "subtitle": "Pozrite si sekciu udalosti.",
+        "button": "Udalosti"
+      }
+    },
+    "stories": {
+      "title": "VAŠE PRÍBEHY:",
+      "buttons": {
+        "more": "Čítať viac",
+        "add": "Pridať príbeh"
+      },
+      "story": {
+        "button": "Čítať ďalej"
+      }
+    },
+    "info": {
+      "left": {
+        "title": "Ozvite sa:"
+      },
+      "right": {
+        "title": "Sponzori:",
+        "subtitle": "Chcete sa stať naším sponzorom?",
+        "contact": "Kontaktujte:"
+      }
+    },
+    "footer": {
+      "title": "© VEREJNOSŤ PROTI SEUXÁLNEMU ZNEUŽÍVANIU A OBŤAŽOVANIU",
+      "author": "Vytvoril: "
+    }
+  }
+}

@@ -1,47 +1,68 @@
-<div class="title-holder"><h2 class="text-uppercase">Vaše príbehy:</h2></div>
+<div class="title-holder">
+  <h2 class="text-uppercase">{{ "homePage.stories.title" | translate }}</h2>
+</div>
 <div class="card-container flex justify-content-center">
-
-  <p-card *ngFor="let story of data" class="card" [header]=story.title>
+  <p-card *ngFor="let story of data" class="card" [header]="story.title">
     <p>
       {{ story.description | truncateText: 50 }}
     </p>
     <ng-template pTemplate="footer">
-      <button class="buttons" (click)="showDialog(story.title, story.description)">Čítať ďalej</button>
+      <button
+        class="buttons"
+        (click)="showDialog(story.title, story.description)"
+      >
+        {{ "homePage.stories.story.button" | translate }}
+      </button>
     </ng-template>
   </p-card>
-
 </div>
 
 <div class="buttons-holder gap-4">
-  <button (click)="window.location.href='storiesPage'">Viac príbehov</button>
-  <button (click)="showForm()">Pridať príbeh</button>
+  <button (click)="window.location.href = 'storiesPage'">
+    {{ "homePage.stories.buttons.more" | translate }}
+  </button>
+  <button (click)="showForm()">
+    {{ "homePage.stories.buttons.add" | translate }}
+  </button>
 </div>
 
-<p-dialog header="{{storyTitle}}" [(visible)]="visible" [style]="{ maxWidth: '70vw', maxHeight: '400px'}">
+<p-dialog
+  header="{{ storyTitle }}"
+  [(visible)]="visible"
+  [style]="{ maxWidth: '70vw', maxHeight: '400px' }"
+>
   <p>
-    {{storyDescription}}
+    {{ storyDescription }}
   </p>
 </p-dialog>
 
-<p-dialog header="Pridaj príbeh" [(visible)]="formVisible" [style]="{ maxWidth: '70vw', maxHeight: '500px'}">
+<p-dialog
+  header="Pridaj príbeh"
+  [(visible)]="formVisible"
+  [style]="{ maxWidth: '70vw', maxHeight: '500px' }"
+>
   <div class="card flex justify-content-center">
     <span class="p-float-label">
-        <input pInputText id="username" [(ngModel)]="storyTitle" />
-        <label htmlFor="username">Nadpis</label>
-
+      <input pInputText id="username" [(ngModel)]="storyTitle" />
+      <label htmlFor="username">Nadpis</label>
     </span>
     <span class="p-float-label">
-<textarea id="float-input" pInputTextarea [(ngModel)]="storyDescription"></textarea>
-<label for="float-input">Obsah</label>
-<p class="error">{{error}}</p>
-
+      <textarea
+        id="float-input"
+        pInputTextarea
+        [(ngModel)]="storyDescription"
+      ></textarea>
+      <label for="float-input">Obsah</label>
+      <p class="error">{{ error }}</p>
     </span>
     <button class="button-story" (click)="addStory()">Pridať príbeh</button>
   </div>
-
 </p-dialog>
 
-
 <div *ngIf="alert">
-  <p-messages [(value)]="messages1" [enableService]="false" [closable]="true"></p-messages>
+  <p-messages
+    [(value)]="messages1"
+    [enableService]="false"
+    [closable]="true"
+  ></p-messages>
 </div>
