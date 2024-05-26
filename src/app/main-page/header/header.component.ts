@@ -7,10 +7,10 @@ import { Component, HostListener } from '@angular/core';
 })
 export class HeaderComponent {
   navItems = [
-    { label: 'homePage.header.menu.about', route: 'aboutPage' },
-    { label: 'homePage.header.menu.sponsors', route: 'sponsorsPage' },
-    { label: 'homePage.header.menu.events', route: 'eventsPage' },
-    { label: 'homePage.header.menu.contact', route: 'contactPage' },
+    { label: 'homePage.header.menu.about', route: 'about' },
+    { label: 'homePage.header.menu.sponsors', route: 'sponsors' },
+    { label: 'homePage.header.menu.events', route: 'events' },
+    { label: 'homePage.header.menu.contact', route: 'contact' },
   ];
 
   showMenu = false;

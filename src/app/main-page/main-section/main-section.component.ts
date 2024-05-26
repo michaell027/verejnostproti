@@ -20,7 +20,7 @@ export class MainSectionComponent implements OnInit {
   }
 
   openAboutUsPage() {
-    window.location.href = '/aboutPage';
+    window.location.href = '/about';
   }
 
   open4FunPage() {
