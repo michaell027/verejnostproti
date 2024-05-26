@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ReportageHolderComponent {
   redirect() {
-    window.location.href = 'eventsPage';
+    window.location.href = 'events';
   }
 }

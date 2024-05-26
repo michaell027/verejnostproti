@@ -9,12 +9,12 @@ import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 
 const routes: Routes = [
-  { path: 'homePage', component: MainPageComponent },
-  { path: 'aboutPage', component: AboutUsPageComponent },
-  { path: 'contactPage', component: ContactUsPageComponent },
-  { path: 'storiesPage', component: AllStoriesPageComponent },
-  { path: 'sponsorsPage', component: SponsorsPageComponent },
-  { path: 'eventsPage', component: EventsPageComponent },
+  { path: 'home', component: MainPageComponent },
+  { path: 'about', component: AboutUsPageComponent },
+  { path: 'contact', component: ContactUsPageComponent },
+  { path: 'stories', component: AllStoriesPageComponent },
+  { path: 'sponsors', component: SponsorsPageComponent },
+  { path: 'events', component: EventsPageComponent },
 
   { path: '**', component: MainPageComponent, canActivate: [MyAuthGuard] },
 ];
