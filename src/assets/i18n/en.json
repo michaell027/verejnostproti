@@ -84,5 +84,51 @@
       "title": "© PUBLIC AGAINST SEXUAL ABUSE AND HARASSMENT",
       "author": "Created by: "
     }
+  },
+  "aboutPage": {
+    "title": "About Us:",
+    "info": "Welcome to our community of people who are determined to fight against sexual abuse and harassment. Our mission is to change society for the better, to achieve a safe and respectful environment for all its members. Our motivation stems from the fact that sexual abuse and harassment are extremely serious crimes that must not be tolerated. Given the alarming statistics and the system's inability to adequately punish offenders, we have decided to step up and take action to improve the situation.",
+    "mission": {
+      "title": "In our efforts, we have clearly defined goals:",
+      "columns": {
+        "first": {
+          "title": "Create a community of people against sexual abuse and harassment:",
+          "content": "We believe that the power of unity can achieve miracles. Therefore, we strive to engage, inform, and educate the public about these sensitive issues. We aim to create a space where people feel supported and have someone to turn to if they find themselves in an uncomfortable situation."
+        },
+        "second": {
+          "title": "Establish a civic association:",
+          "content": "We plan to act, organize, and establish a civic association that will carry out our goals. This association will provide a platform for activism and work on the prevention of sexual abuse and harassment."
+        },
+        "third": {
+          "title": "Increase penalties for sexual abuse and harassment without exceptions:",
+          "content": "We are convinced that only fair and strict penalties can serve as a deterrent and send the right message to society. We will advocate for legislative changes that ensure just punishment for offenders and a fair judicial process for victims."
+        },
+        "fourth": {
+          "title": "Fair compensation for sexual abuse and harassment:",
+          "content": "We recognize that the psychological and emotional consequences of sexual abuse and harassment can be devastating. We will strive to ensure that victims receive dignified support and compensation to help them rebuild their lives after trauma."
+        }
+      }
+    }
+  },
+  "sponsorsPage": {
+    "title": "Our Sponsors:",
+    "sponsorship": "Interested in becoming our sponsor?",
+    "contact": "Contact:"
+  },
+  "eventsPage": {
+    "title": "Events for Your Safety and Support:",
+    "info": "We are delighted to welcome all of you to our events focused on your safety and support. We are a civic association dedicated to providing assistance and support to women and girls who have experienced sexual harassment. Our events are designed to provide not only information and education on this issue but also a space where you can openly discuss your experiences and seek support. Regardless of where you are in the healing process, our events are open to all seeking support, information, or simply a place to share. We look forward to the opportunity to support and grow together.",
+    "first": {
+      "title": "International Women's Day:",
+      "firstContent": "On behalf of our organization, Public Against, comprised of students committed to combating sexual violence, today we dedicated dozens of flowers to women on Main Street to send them an important message. Our goal is to support and assist victims of this violence.",
+      "secondContent": "Daniel Arvai, founder of our organization and high school student, is deeply committed to helping girls and women affected by sexual harassment and abuse.",
+      "thirdContent": "We proudly invested our own funds in purchasing flowers, which we then distributed along with informational leaflets about our organization. Our efforts were also supported by young children who joined us in distributing.",
+      "fourthContent": "Support for our activity was also expressed by female teachers who believe that educating respect for women should start at the earliest age.",
+      "fifthContent": "On International Women's Day, we decided to encourage women not to hesitate to report sexual violence. The numerous stories that women and girls have already entrusted to us further motivated us to fight together against this form of violence through our organization. We are collaborating with lawyers and psychologists and plan to organize lectures and discussions at various schools because we believe that educational work is key to change and protecting victims' rights."
+    }
+  },
+  "contactPage": {
+    "title": "Contact Us:",
+    "question": "Need help?"
   }
 }

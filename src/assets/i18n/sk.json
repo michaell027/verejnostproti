@@ -84,5 +84,51 @@
       "title": "© VEREJNOSŤ PROTI SEUXÁLNEMU ZNEUŽÍVANIU A OBŤAŽOVANIU",
       "author": "Vytvoril: "
     }
+  },
+  "aboutPage": {
+    "title": "O nás:",
+    "info": "Vitajte v našej komunite ľudí, ktorí odhodlane bojujú proti sexuálnemu zneužívaniu a obťažovaniu. Naším poslaním je zmeniť spoločnosť k lepšiemu, aby sme dosiahli bezpečné a rešpektujúce prostredie pre všetkých jej členov. Naša motivácia vychádza zo skutočnosti, že sexuálne zneužívanie a obťažovanie sú nesmierne závažné trestné činy, ktoré nesmú byť tolerované. Vzhľadom na alarmujúce štatistiky a neschopnosť systému potrestať páchateľov primerane, sme sa rozhodli vystúpiť a podniknúť kroky na zlepšenie situácie.",
+    "mission": {
+      "title": "V našom úsilí máme jasne stanovené ciele:",
+      "columns": {
+        "first": {
+          "title": "Vytvoriť komunitu ľudí, ktorá bude proti sexuálnemu zneužívaniu a obťažovaniu:",
+          "content": "Veríme, že sila jednoty môže dosiahnuť zázraky. Preto sa snažíme zapájať, informovať a vzdelávať verejnosť o týchto citlivých témach. Chceme vytvoriť priestor, kde sa ľudia budú cítiť podporovaní a na koho sa môžu obrátiť, ak sa ocitnú v nepríjemnej situácii."
+        },
+        "second": {
+          "title": "Založiť občianske združenie:",
+          "content": "Plánujeme konať, zorganizovať sa a založiť občianske združenie, ktoré bude mať naše ciele za úlohu. Toto združenie bude poskytovať platformu pre aktivizmus a prácu na prevencii sexuálneho zneužívania a obťažovania."
+        },
+        "third": {
+          "title": "Zvýšiť tresty za sexuálne zneužívanie a obťažovanie bez podmienok:",
+          "content": "Sme presvedčení, že len spravodlivé a prísne tresty môžu slúžiť ako odstrašujúci faktor a dávať správny signál spoločnosti. Budeme presadzovať legislatívne zmeny, ktoré zaručia spravodlivé potrestanie páchateľov a spravodlivý súdny proces pre obete."
+        },
+        "fourth": {
+          "title": "Spravodlivé \"odškodné\" za sexuálne zneužívanie a obťažovanie:",
+          "content": "Uvedomujeme si, že psychické a emocionálne následky sexuálneho zneužívania a obťažovania môžu byť ničivé. Budeme sa usilovať o to, aby obete dostávali dôstojnú podporu a kompenzáciu, ktorá im pomôže obnoviť život po traume."
+        }
+      }
+    }
+  },
+  "sponsorsPage": {
+    "title": "Naši sponzori:",
+    "sponsorship": "Chcete sa stať naším sponzorom?",
+    "contact": "Kontaktujte:"
+  },
+  "eventsPage": {
+    "title": "Udalosti pre vaše bezpečie a podporu:",
+    "info": "Teší nás, že môžeme privítať vás všetkých na našich udalostiach zameraných na vaše bezpečie a podporu. Sme občianske združenie, ktoré sa zaoberá poskytovaním pomoci a podpory ženám a dievčatám, ktoré zažili sexuálne obťažovanie. Naše podujatia sú navrhnuté tak, aby poskytli nielen informácie a osvetu o tejto problematike, ale aj prostredie, kde sa môžete otvorene hovoriť o vašich skúsenostiach a hľadať podporu. Nezáleží na tom, kde sa práve nachádzate v procese zotavovania sa - naše udalosti sú otvorené všetkým, ktorí hľadajú podporu, informácie alebo len miesto na zdieľanie. Tešíme sa na možnosť spoločne sa podporovať a rásť.",
+    "first": {
+      "title": "Medzinárodný deň žien:",
+      "firstContent": "V mene našej organizácie Verejnosť Proti, zloženej zo študentov, ktorí sú odhodlaní bojovať proti sexuálnemu násiliu, sme dnes venovali desiatky kvetov ženám na Hlavnej ulici, aby sme im poslali dôležitú správu. Naším cieľom je podporovať a pomáhať obetiam tohto násilia.",
+      "secondContent": "Daniel Arvai, zakladateľ našej organizácie a stredoškolák, je hlboko presvedčený o dôležitosti pomáhať dievčatám a ženám, ktoré boli postihnuté sexuálnym obťažovaním a zneužívaním.",
+      "thirdContent": "S hrdosťou sme investovali naše vlastné financie do nákupu kvetov, ktoré sme potom rozdávali spolu s informačnými letákmi o našej organizácii. Našu snahu posilnili aj malí škôlkari, ktorí sa k nám pripojili pri rozdávaní.",
+      "fourthContent": "Podporu pre našu aktivitu vyjadrili aj pani učiteľky, ktoré veria, že výchova k úcte k ženám by mala začínať už v najútlejšom veku.",
+      "fifthContent": "Na Medzinárodný deň žien sme sa rozhodli povzbudiť ženy, aby neváhali ohlásiť sexuálne násilie. Početné príbehy, ktoré nám ženy a dievčatá už zverili, nás ešte viac motivovali k tomu, aby sme spoločne bojovali proti tejto formy násilia prostredníctvom našej organizácie. Spolupracujeme s právnikmi a psychológmi a plánujeme organizovať prednášky a diskusie na rôznych školách, pretože veríme, že osvetová práca je kľúčom k zmene a ochrane práv obetí."
+    }
+  },
+  "contactPage": {
+    "title": "Kontaktujte nás:",
+    "question": "Potrebujete pomôcť?"
   }
 }
