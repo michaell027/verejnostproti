@@ -9,7 +9,6 @@ import { DOCUMENT } from '@angular/common';
   styleUrls: ['./google-maps.component.css'],
 })
 export class GoogleMapsComponent implements OnInit {
-  libraries: any = null;
   map?: google.maps.Map;
   marker?: google.maps.marker.AdvancedMarkerElement;
 
