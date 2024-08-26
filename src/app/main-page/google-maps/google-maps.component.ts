@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
 import * as process from 'process';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-google-maps',
@@ -9,76 +10,83 @@ import * as process from 'process';
 })
 export class GoogleMapsComponent implements OnInit {
   map?: google.maps.Map;
-  marker?: google.maps.Marker;
+  marker?: google.maps.marker.AdvancedMarkerElement;
+
+  isInitialized = false;
 
   mapHeight = 400;
   mapWidth = 400;
 
-  constructor() {}
-
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private renderer2: Renderer2,
+  ) {}
+  private loadScript(url: string) {
+    return new Promise((resolve, reject) => {
+      const script = this.renderer2.createElement('script');
+      script.type = 'text/javascript';
+      script.src = url;
+      script.text = ``;
+      script.async = true;
+      script.defer = true;
+      script.onload = resolve;
+      script.onerror = reject;
+      this.renderer2.appendChild(this.document.body, script);
+    });
+  }
   ngOnInit() {
     if (!process.env['GOOGLE_MAPS_API_KEY']) {
       console.error('GOOGLE_MAPS_API_KEY is not set');
       return;
     }
-    const loader = new Loader({
-      apiKey: process.env['GOOGLE_MAPS_API_KEY'],
-      version: 'weekly',
-    });
 
-    loader.load().then(() => {
-      const mapCenter: google.maps.LatLngLiteral = {
-        lat: 48.726255,
-        lng: 21.255966,
-      };
+    const url = `https://maps.googleapis.com/maps/api/js?key=${process.env['GOOGLE_MAPS_API_KEY']}`;
+    this.loadScript(url).then(() => this.initMap());
 
-      const markerPosition: google.maps.LatLngLiteral = {
-        lat: 48.726187,
-        lng: 21.254647,
-      };
+    this.updateMapDimensions();
+    window.addEventListener('resize', this.updateMapDimensions.bind(this));
+  }
 
-      const markerOptions: google.maps.MarkerOptions = {
-        animation: google.maps.Animation.DROP,
-      };
+  async initMap(): Promise<void> {
+    const mapCenter: google.maps.LatLngLiteral = {
+      lat: 48.726255,
+      lng: 21.255966,
+    };
 
-      const mapOptions: google.maps.MapOptions = {
+    const markerPosition: google.maps.LatLngLiteral = {
+      lat: 48.726187,
+      lng: 21.254647,
+    };
+    // The map, centered at the specified location
+    this.map = new google.maps.Map(
+      document.getElementById('map') as HTMLElement,
+      {
+        mapId: process.env['GOOGLE_MAPS_MAP_ID'],
+        center: mapCenter,
+        zoom: 16,
         zoomControl: true,
         scrollwheel: true,
         disableDoubleClickZoom: true,
         draggable: true,
-        styles: [
-          {
-            featureType: 'poi',
-            elementType: 'labels',
-            stylers: [{ visibility: 'on' }],
-          },
-        ],
-      };
+      },
+    );
 
-      this.map = new google.maps.Map(
-        document.getElementById('map') as HTMLElement,
-        {
-          ...mapOptions,
-          center: mapCenter,
-          zoom: 16,
-        },
-      );
+    console.log('Map loaded');
 
-      this.marker = new google.maps.Marker({
-        position: markerPosition,
-        map: this.map,
-        title: 'Verejnosť proti',
-        // Spread options directly
-        animation: google.maps.Animation.DROP,
-      });
+    const { AdvancedMarkerElement } = (await google.maps.importLibrary(
+      'marker',
+    )) as google.maps.MarkerLibrary;
 
-      this.marker.addListener('click', () => {
-        this.openGoogleMaps();
-      });
+    // The marker, positioned at the specified location
+    this.marker = new google.maps.marker.AdvancedMarkerElement({
+      map: this.map,
+      position: markerPosition,
+      title: 'Verejnosť proti',
     });
 
-    this.updateMapDimensions();
-    window.addEventListener('resize', this.updateMapDimensions.bind(this));
+    this.marker!.addListener('click', () => {
+      this.openGoogleMaps();
+    });
   }
 
   updateMapDimensions() {
@@ -98,9 +106,9 @@ export class GoogleMapsComponent implements OnInit {
 
   openGoogleMaps() {
     if (this.marker) {
-      const markerPosition = this.marker.getPosition();
+      const markerPosition = this.marker.position;
       if (markerPosition) {
-        const url = `https://www.google.com/maps/search/?api=1&query=${markerPosition.lat()},${markerPosition.lng()}`;
+        const url = `https://www.google.com/maps/search/?api=1&query=${markerPosition.lat},${markerPosition.lng}`;
         window.open(url, '_blank');
       }
     }
