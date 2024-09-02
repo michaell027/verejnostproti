@@ -13,12 +13,21 @@ h5 {
 }
 
 a {
-  color: white !important;
-  text-decoration: none !important;
+  color: white;
+}
+
+a:hover {
+  color: #9e70ae;
 }
 
 .text {
   display: flex;
+  justify-content: center;
+}
+
+.creator {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
