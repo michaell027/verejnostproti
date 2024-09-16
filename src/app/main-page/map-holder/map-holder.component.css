@@ -46,17 +46,23 @@ h2 {
   padding-top: 20px;
 }
 
-.sponsors {
+.sponsors,
+.main-sponsors {
   margin-top: 15px;
   text-align: center;
   flex-direction: column;
 }
 
-.sponsors img {
+.sponsors img,
+.main-sponsors img {
   width: 80px;
   height: auto;
   margin-left: 20px;
   transition: transform 0.4s;
+}
+
+.main-sponsors img {
+  width: 200px;
 }
 
 img:hover {
