@@ -10,7 +10,6 @@ export class TopHeaderComponent implements OnInit {
   currentLang: string;
   constructor(private translateService: TranslateService) {
     this.currentLang = translateService.currentLang;
-    console.log(this.currentLang);
   }
 
   ngOnInit(): void {}

@@ -39,6 +39,13 @@
             <img src="assets/images/trust_pay.png" alt="sponzor" />
           </a>
         </div>
+        <div class="main-sponsors">
+          <ng-container *ngIf="kskData | async as content">
+            <a [href]="content.sponsorLink" target="_blank">
+              <img [src]="content.logoPath" alt="sponzor" />
+            </a>
+          </ng-container>
+        </div>
         <div class="question">
           <h4 class="text-uppercase">{{"homePage.info.right.subtitle" | translate}}</h4>
           <h6>{{"homePage.info.right.contact" | translate}}</h6>
