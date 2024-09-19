@@ -60,6 +60,19 @@
         "button": "Events"
       }
     },
+    "learning": {
+      "title": "Increasing Awareness of Sexual Abuse and Harassment",
+      "topTitle": "Currently ongoing project:",
+      "text": {
+        "first": "Our latest educational project, focused on preventing and raising awareness about sexual abuse and harassment, is currently underway. This project takes place in schools with the aim to provide young people with the necessary information, tools, and resources to recognize, prevent, and correctly respond to situations involving sexual abuse and harassment.",
+        "second": "Through interactive workshops, discussions, and educational materials, we provide support and guidance to students and teachers on this important topic. The project emphasizes the importance of open communication, mutual respect, and constructive problem-solving."
+      },
+      "sponsor": {
+        "title": "Support and Funding:",
+        "text": "We are proud to announce that this project has been implemented with the financial support of the Košice Self-governing Region, enabling us to expand our activities and reach a wider audience. Thanks to their generous support, we can work towards creating a safer and more informed environment for everyone.",
+        "button": "More Information"
+      }
+    },
     "stories": {
       "title": "YOUR STORIES:",
       "buttons": {

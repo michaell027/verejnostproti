@@ -60,6 +60,19 @@
         "button": "Udalosti"
       }
     },
+    "learning": {
+      "title": "Zvýšenie povedomia o sexuálnom zneužívaní a obťažovaní",
+      "topTitle": "Aktuálne prebieha tento projekt:",
+      "text": {
+        "first": "Aktuálne prebieha náš najnovší vzdelávací projekt zameraný na prevenciu a zvyšovanie povedomia o sexuálnom zneužívaní a obťažovaní. Tento projekt sa uskutočňuje na školách s cieľom poskytnúť mladým ľuďom potrebné informácie, nástroje a zdroje, ktoré im pomôžu rozpoznať, predísť a správne reagovať na situácie súvisiace so sexuálnym zneužívaním a obťažovaním.",
+        "second": "Cez interaktívne workshopy, diskusie a vzdelávacie materiály poskytujeme študentom a učiteľom podporu a usmerňovanie v tejto dôležitej téme. Projekt zdôrazňuje dôležitosť otvorenej komunikácie, vzájomného rešpektu a konštruktívneho riešenia problémov."
+      },
+      "sponsor": {
+        "title": "Podpora a financovanie:",
+        "text": "S hrdosťou oznamujeme, že tento projekt bol realizovaný s finančnou podporou Košického samosprávneho kraja, čo nám umožňuje rozšíriť naše aktivity a dosiahnuť širšiu skupinu príjemcov. Vďaka ich štedrej podpore môžeme pracovať na vytváraní bezpečnejšieho a informovanejšieho prostredia pre všetkých.",
+        "button": "Viac informácií"
+      }
+    },
     "stories": {
       "title": "VAŠE PRÍBEHY:",
       "buttons": {
