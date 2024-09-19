@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './main-page/header/header.component';
 import { MenubarModule } from 'primeng/menubar';
@@ -55,6 +55,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LearningComponent } from './main-page/learning/learning/learning.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -90,6 +91,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     EventsPageComponent,
     EventsHeadingComponent,
     WomensDayComponent,
+    LearningComponent,
   ],
   imports: [
     BrowserModule,
