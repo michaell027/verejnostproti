@@ -6,6 +6,16 @@
           {{ "sponsorsPage.title" | translate }}
         </h2>
       </div>
+      <div class="white-column p-5 flex-column gap-4 mb-4">
+        <h3 class="text-uppercase fw-bold">
+          {{ "sponsorsPage.mainSponsor" | translate }}:
+        </h3>
+        <ng-container *ngIf="kskData | async as content">
+          <a [href]="content.sponsorLink" target="_blank">
+            <img [src]="content.logoPath" alt="sponzor" />
+          </a>
+        </ng-container>
+      </div>
       <div class="white-column">
         <a
           href="https://www.facebook.com/elitbytdevelopment40/"
@@ -29,6 +39,14 @@
         <a href="https://www.trustpay.sk/" target="_blank">
           <img
             ngSrc="assets/images/trust_pay.png"
+            alt="sponzor"
+            height="150"
+            width="150"
+          />
+        </a>
+        <a href="https://www.fakturaonline.sk/" target="_blank">
+          <img
+            ngSrc="assets/images/faktura_online_square.png"
             alt="sponzor"
             height="150"
             width="150"

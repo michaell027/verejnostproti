@@ -1,5 +1,5 @@
 .container-fluid {
-  height: 850px;
+  height: 1100px;
   padding: 0;
   margin: 0;
   align-items: center;
@@ -8,7 +8,7 @@
 
 .background-image {
   height: 100%;
-  background-image: url("https://c1.wallpaperflare.com/preview/850/141/226/hiding-boy-girl-child.jpg");
+  background-image: url("/assets/images/sponsor_page_wallpaper.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -42,7 +42,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 1000px;
   z-index: 1;
   margin-left: auto;
@@ -108,7 +108,7 @@ img:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 850px;
+  height: 1100px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 

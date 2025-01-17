@@ -126,7 +126,8 @@
   "sponsorsPage": {
     "title": "Naši sponzori:",
     "sponsorship": "Chcete sa stať naším sponzorom?",
-    "contact": "Kontaktujte:"
+    "contact": "Kontaktujte:",
+    "mainSponsor": "Hlavný sponzor"
   },
   "eventsPage": {
     "title": "Udalosti pre vaše bezpečie a podporu:",
