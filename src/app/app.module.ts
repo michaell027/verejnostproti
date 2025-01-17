@@ -56,6 +56,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LearningComponent } from './main-page/learning/learning/learning.component';
+import { SchoolLecturesComponent } from './events-page/school-lectures/school-lectures.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -92,6 +93,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     EventsHeadingComponent,
     WomensDayComponent,
     LearningComponent,
+    SchoolLecturesComponent,
   ],
   imports: [
     BrowserModule,
