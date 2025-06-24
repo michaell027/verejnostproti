@@ -1,9 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'primeng/button';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main-section',
   templateUrl: './main-section.component.html',
   styleUrls: ['./main-section.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    ButtonModule,
+    TranslateModule
+  ]
 })
 export class MainSectionComponent implements OnInit {
   ngOnInit(): void {}

@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-sponsors-page',
   templateUrl: './sponsors-page.component.html',
   styleUrls: ['./sponsors-page.component.css'],
+  standalone: true,
+  imports: [TranslateModule],
 })
 export class SponsorsPageComponent {
   kskData: Observable<{ logoPath: string; sponsorLink: string }>;

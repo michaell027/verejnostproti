@@ -1,9 +1,12 @@
 import { Component, signal } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-columns',
   templateUrl: './columns.component.html',
   styleUrls: ['./columns.component.css'],
+  standalone: true,
+  imports: [TranslateModule]
 })
 export class ColumnsComponent {
   protected readonly window = window;

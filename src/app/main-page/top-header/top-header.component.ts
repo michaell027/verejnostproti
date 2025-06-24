@@ -1,10 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-top-header',
   templateUrl: './top-header.component.html',
   styleUrls: ['./top-header.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    TranslateModule
+  ]
 })
 export class TopHeaderComponent implements OnInit {
   currentLang: string;

@@ -1,14 +1,34 @@
-import {Component, OnInit} from '@angular/core';
-import {FirebaseService} from "../../firebase.service";
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { FirebaseService } from "../../firebase.service";
+import { Message } from 'primeng/api';
+import { DialogModule } from 'primeng/dialog';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { ButtonModule } from 'primeng/button';
+import { MessagesModule } from 'primeng/messages';
+import { CardModule } from 'primeng/card';
+import { TranslateModule } from '@ngx-translate/core';
 import { TruncateTextPipe } from '../../truncate-text.pipe';
-import {Message} from "primeng/api";
-
 
 @Component({
   selector: 'app-stories-holder',
   templateUrl: './stories-holder.component.html',
   styleUrls: ['./stories-holder.component.css'],
-  providers: [TruncateTextPipe]
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    DialogModule,
+    InputTextModule,
+    InputTextareaModule,
+    ButtonModule,
+    MessagesModule,
+    CardModule,
+    TranslateModule,
+    TruncateTextPipe
+  ]
 })
 export class StoriesHolderComponent implements OnInit{
 

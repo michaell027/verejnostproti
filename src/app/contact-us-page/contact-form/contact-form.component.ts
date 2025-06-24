@@ -1,10 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from "@angular/forms";
 
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
-  styleUrls: ['./contact-form.component.css']
+  styleUrls: ['./contact-form.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    ReactiveFormsModule
+  ]
 })
 export class ContactFormComponent implements OnInit{
   contactForm: FormGroup;

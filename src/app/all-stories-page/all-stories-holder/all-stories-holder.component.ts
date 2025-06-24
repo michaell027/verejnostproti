@@ -1,13 +1,23 @@
-import {Component, HostListener} from '@angular/core';
-import {FirebaseService} from "../../firebase.service";
-import {TruncateTextPipe} from "../../truncate-text.pipe";
-
+import { Component, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CardModule } from 'primeng/card';
+import { PaginatorModule } from 'primeng/paginator';
+import { ButtonModule } from 'primeng/button';
+import { TruncateTextPipe } from '../../truncate-text.pipe';
+import { FirebaseService } from '../../firebase.service';
 
 @Component({
   selector: 'app-all-stories-holder',
   templateUrl: './all-stories-holder.component.html',
   styleUrls: ['./all-stories-holder.component.css'],
-  providers: [TruncateTextPipe]
+  standalone: true,
+  imports: [
+    CommonModule,
+    CardModule,
+    PaginatorModule,
+    ButtonModule,
+    TruncateTextPipe
+  ]
 })
 export class AllStoriesHolderComponent {
   data: any[] = [];

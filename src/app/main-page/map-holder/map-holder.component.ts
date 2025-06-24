@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { map, Observable } from 'rxjs';
+import { GoogleMapsComponent } from '../google-maps/google-maps.component';
 
 @Component({
   selector: 'app-map-holder',
   templateUrl: './map-holder.component.html',
   styleUrls: ['./map-holder.component.css'],
+  standalone: true,
+  imports: [
+    CommonModule,
+    TranslateModule,
+    GoogleMapsComponent
+  ]
 })
 export class MapHolderComponent {
   kskData: Observable<{ logoPath: string; sponsorLink: string }>;

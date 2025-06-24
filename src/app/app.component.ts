@@ -1,10 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { HeaderComponent } from './main-page/header/header.component';
+import { FooterComponent } from './main-page/footer/footer.component';
+import { TopHeaderComponent } from './main-page/top-header/top-header.component';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    TranslateModule,
+    HeaderComponent,
+    FooterComponent,
+    TopHeaderComponent
+  ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'verejnostproti';
