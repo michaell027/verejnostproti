@@ -1,0 +1,62 @@
+<div class="container">
+  <div
+    class="column column-1"
+    (click)="window.open('https://4fund.com/jarmnb', '_blank')"
+  >
+    <div class="circle">
+      <div class="mini-circle">
+        <img
+          ngSrc="../../../../../assets/images/icons/heart-care-icon.svg"
+          alt="support us"
+          height="16"
+          width="16"
+        />
+      </div>
+    </div>
+    <h5 class="font-monospace">
+      {{ "homePage.columns.first.title" | translate }}
+    </h5>
+    <div class="custom-divider"></div>
+    <p class="text-center font-monospace">
+      {{ "homePage.columns.first.content" | translate }}
+    </p>
+  </div>
+  <div class="column column-2" (click)="contactScroll.emit()">
+    <div class="circle">
+      <div class="mini-circle">
+        <img
+          ngSrc="../../../../../assets/images/icons/add-group-member-icon.svg"
+          alt="join us"
+          height="16"
+          width="16"
+        />
+      </div>
+    </div>
+    <h5 class="font-monospace">
+      {{ "homePage.columns.second.title" | translate }}
+    </h5>
+    <div class="custom-divider"></div>
+    <p class="text-center font-monospace">
+      {{ "homePage.columns.second.content" | translate }}
+    </p>
+  </div>
+  <div class="column column-3" (click)="contactNavigate.emit()">
+    <div class="circle">
+      <div class="mini-circle">
+        <img
+          ngSrc="../../../../../assets/images/icons/handshake-icon.svg"
+          alt="need help"
+          height="16"
+          width="16"
+        />
+      </div>
+    </div>
+    <h5 class="font-monospace">
+      {{ "homePage.columns.third.title" | translate }}
+    </h5>
+    <div class="custom-divider"></div>
+    <p class="text-center font-monospace">
+      {{ "homePage.columns.third.content" | translate }}
+    </p>
+  </div>
+</div>

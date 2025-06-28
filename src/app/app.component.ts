@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { HeaderComponent } from './main-page/header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './main-page/footer/footer.component';
-import { TopHeaderComponent } from './main-page/top-header/top-header.component';
+import { TopHeaderComponent } from './components/top-header/top-header.component';
 
 @Component({
   selector: 'app-root',
@@ -15,10 +15,10 @@ import { TopHeaderComponent } from './main-page/top-header/top-header.component'
     TranslateModule,
     HeaderComponent,
     FooterComponent,
-    TopHeaderComponent
+    TopHeaderComponent,
   ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'verejnostproti';

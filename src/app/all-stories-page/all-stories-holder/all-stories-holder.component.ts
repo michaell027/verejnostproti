@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { CardModule } from 'primeng/card';
 import { PaginatorModule } from 'primeng/paginator';
 import { ButtonModule } from 'primeng/button';
-import { TruncateTextPipe } from '../../truncate-text.pipe';
-import { FirebaseService } from '../../firebase.service';
+import { TruncateTextPipe } from '../../pipes/truncate-text.pipe';
+import { FirebaseService } from '../../services/firebase.service';
+import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-all-stories-holder',
@@ -16,8 +17,9 @@ import { FirebaseService } from '../../firebase.service';
     CardModule,
     PaginatorModule,
     ButtonModule,
-    TruncateTextPipe
-  ]
+    TruncateTextPipe,
+    DialogModule,
+  ],
 })
 export class AllStoriesHolderComponent {
   data: any[] = [];
@@ -47,7 +49,9 @@ export class AllStoriesHolderComponent {
 
   loadData() {
     this.firebaseService.getData('stories').subscribe((data: any[]) => {
-      this.data = data.filter(story => story.verified === "true").sort((a, b) => b.from - a.from);
+      this.data = data
+        .filter((story) => story.verified === 'true')
+        .sort((a, b) => b.from - a.from);
     });
   }
 
@@ -55,7 +59,6 @@ export class AllStoriesHolderComponent {
     this.isSmallScreen = window.innerWidth < 520 && window.innerWidth > 360;
     this.isMiniScreen = window.innerWidth <= 360;
   }
-
 
   getCurrentPageData(): any[] {
     const start = this.currentPage * this.storiesPerPage;

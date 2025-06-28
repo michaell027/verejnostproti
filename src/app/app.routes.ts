@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { MainPageComponent } from './main-page/main-page.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { AllStoriesPageComponent } from './all-stories-page/all-stories-page.component';
@@ -15,5 +15,5 @@ export const routes: Routes = [
   { path: 'admin', component: AdminPageComponent },
   { path: 'sponsors', component: SponsorsPageComponent },
   { path: 'events', component: EventsPageComponent },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
