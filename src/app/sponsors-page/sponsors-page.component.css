@@ -55,6 +55,7 @@
 img {
   max-width: 200px;
   margin: 20px 15px 15px;
+  height: auto;
 }
 
 img:hover {
@@ -113,7 +114,22 @@ img:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@media screen and (max-width: 870px) {
+.main-sponsors-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px; /* adjust spacing as needed */
+}
+
+@media screen and (max-width: 965px) {
+  .container-fluid {
+    height: 1300px;
+  }
+
+  .container-fluid ::before {
+    height: 1300px;
+  }
+
   .white-column {
     width: 80%;
   }
@@ -127,24 +143,29 @@ img:hover {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 725px) {
   .white-column {
-    width: 95%;
+    width: 90%;
+  }
+
+  img {
+    max-width: 150px;
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 600px) {
+  .main-sponsors-row img {
+    max-width: 100px;
+    width: auto;
+    height: auto;
+  }
+
   .container-fluid {
-    height: 1300px;
+    height: 1200px;
   }
 
   .container-fluid ::before {
-    height: 1300px;
-  }
-
-  .white-column {
-    width: 80%;
-    flex-direction: column;
+    height: 1200px;
   }
 
   .container-fluid {
@@ -155,29 +176,17 @@ img:hover {
   }
 
   img {
-    max-width: 150px;
+    max-width: 100px;
   }
 }
 
 @media screen and (max-width: 490px) {
-  .container-fluid {
-    height: 1200px;
-  }
-
-  .container-fluid ::before {
-    height: 1200px;
-  }
-
   .about-us-heading {
     font-size: 30px;
   }
 
   .purple-box {
     margin-top: 150px;
-  }
-
-  img {
-    max-width: 130px;
   }
 
   .contact h5 {
@@ -191,11 +200,11 @@ img:hover {
 
 @media screen and (max-width: 400px) {
   .container-fluid {
-    height: 1100px;
+    height: 1200px;
   }
 
   .container-fluid ::before {
-    height: 1100px;
+    height: 1200px;
   }
 
   .about-us-heading {
@@ -206,15 +215,39 @@ img:hover {
     margin-top: 150px;
   }
 
-  img {
-    max-width: 100px;
-  }
-
   .contact h5 {
     font-size: 15px;
   }
 
   .contact a {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .white-column {
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .main-sponsors-row {
+    flex-direction: column;
+  }
+
+  .main-sponsors-row img {
+    max-width: 100px;
+    width: auto;
+    height: auto;
+  }
+
+  .container-fluid {
+    height: 1600px;
+  }
+
+  .container-fluid ::before {
+    height: 1600px;
   }
 }

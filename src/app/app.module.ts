@@ -49,14 +49,15 @@ import { CampaignComponent } from './main-page/campaign/campaign.component';
 import { ReportageHolderComponent } from './main-page/reportage-holder/reportage-holder.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { EventsHeadingComponent } from './events-page/events-heading/events-heading.component';
-import { WomensDayComponent } from './events-page/womens-day/womens-day.component';
+import { WomensDay2024Component } from './events-page/womens-day-2024/womens-day-2024.component';
+import { WomensDay2025Component } from './events-page/womens-day-2025/womens-day-2025.component';
 import { NgOptimizedImage } from '@angular/common';
-
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { LearningComponent } from './main-page/learning/learning/learning.component';
 import { SchoolLecturesComponent } from './events-page/school-lectures/school-lectures.component';
+import { ImageModule } from 'primeng/image';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -91,7 +92,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReportageHolderComponent,
     EventsPageComponent,
     EventsHeadingComponent,
-    WomensDayComponent,
+    WomensDay2024Component,
+    WomensDay2025Component,
     LearningComponent,
     SchoolLecturesComponent,
   ],
@@ -124,6 +126,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    ImageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

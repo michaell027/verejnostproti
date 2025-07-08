@@ -127,7 +127,7 @@
     "title": "Our Sponsors:",
     "sponsorship": "Interested in becoming our sponsor?",
     "contact": "Contact:",
-    "mainSponsor": "Main Sponsor"
+    "mainSponsors": "Main Sponsors"
   },
   "eventsPage": {
     "title": "Events for Your Safety and Support:",
@@ -145,6 +145,14 @@
       "firstContent": "The aim of the project is to raise awareness about the issue of sexual abuse and harassment among young people, their parents, and educators. It focuses on prevention, recognizing risky situations, and promoting open communication about sensitive topics. The project will be implemented through educational and informational activities conducted in schools and community settings.",
       "grant": "Grant amount: €1,500",
       "grant_info": "The funds will be used for organizing activities, creating educational materials, and ensuring the involvement of a professional team."
+    },
+    "iwd_2025": {
+      "title": "International Women's Day 2025 in Prešov and Košice",
+      "main_content": "This is what International Women's Day looked like in Prešov and Košice. Together, we handed out roses for this occasion, each carrying a story of prevention against sexual abuse and harassment.",
+      "content": "Our goal is to raise awareness about this topic and motivate victims not to be afraid to speak up.",
+      "main_partner": "Thank you all for helping with the organization and also to Mestské zastupiteľstvo Prešov for your cooperation.",
+      "partners": "Our thanks also go to our partners:",
+      "thanks": "Thank you!"
     }
   },
   "contactPage": {
