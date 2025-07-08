@@ -1,0 +1,49 @@
+/* Basic styling for the events slider */
+.events-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* reduced gap for closer arrows */
+  margin-top: 24px;
+}
+
+.arrow {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 60px; /* bigger arrow */
+  height: 60px; /* bigger arrow */
+  font-size: 2.5rem; /* bigger icon */
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Optional: center the event content */
+.events-slider ng-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+}

@@ -8,13 +8,23 @@
       </div>
       <div class="white-column p-5 flex-column gap-4 mb-4">
         <h3 class="text-uppercase fw-bold">
-          {{ "sponsorsPage.mainSponsor" | translate }}:
+          {{ "sponsorsPage.mainSponsors" | translate }}:
         </h3>
-        <ng-container *ngIf="kskData | async as content">
-          <a [href]="content.sponsorLink" target="_blank">
-            <img [src]="content.logoPath" alt="sponzor" />
+        <div class="main-sponsors-row">
+          <ng-container *ngIf="kskData | async as content">
+            <a [href]="content.sponsorLink" target="_blank">
+              <img [src]="content.logoPath" alt="sponzor" />
+            </a>
+          </ng-container>
+          <a href="https://youth.europa.eu/solidarity_en" target="_blank">
+            <img
+              ngSrc="assets/images/european_solidarity_corps_logo.png"
+              alt="sponzor"
+              height="80"
+              width="200"
+            />
           </a>
-        </ng-container>
+        </div>
       </div>
       <div class="white-column">
         <a
@@ -58,14 +68,6 @@
             alt="sponzor"
             height="100"
             width="175"
-          />
-        </a>
-        <a href="https://youth.europa.eu/solidarity_en" target="_blank">
-          <img
-            ngSrc="assets/images/european_solidarity_corps_logo.png"
-            alt="sponzor"
-            height="80"
-            width="200"
           />
         </a>
       </div>

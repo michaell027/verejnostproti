@@ -44,9 +44,6 @@
           <a href="https://precisecatering.sk/en/home/" target="_blank">
             <img src="assets/images/precise-catering.png" alt="sponzor" />
           </a>
-          <a href="https://youth.europa.eu/solidarity_en" target="_blank">
-            <img src="assets/images/european_solidarity_corps_logo.png" alt="sponzor" />
-          </a>
         </div>
         <div class="main-sponsors">
           <ng-container *ngIf="kskData | async as content">
@@ -54,6 +51,9 @@
               <img [src]="content.logoPath" alt="sponzor" />
             </a>
           </ng-container>
+          <a href="https://youth.europa.eu/solidarity_en" target="_blank">
+            <img src="assets/images/european_solidarity_corps_logo.png" alt="sponzor" />
+          </a>
         </div>
         <div class="question">
           <h4 class="text-uppercase">{{"homePage.info.right.subtitle" | translate}}</h4>
