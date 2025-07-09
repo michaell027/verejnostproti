@@ -128,7 +128,7 @@
     "title": "Naši sponzori:",
     "sponsorship": "Chcete sa stať naším sponzorom?",
     "contact": "Kontaktujte:",
-    "mainSponsor": "Hlavný sponzor"
+    "mainSponsors": "Hlavní sponzori"
   },
   "eventsPage": {
     "title": "Udalosti pre vaše bezpečie a podporu:",
@@ -146,6 +146,14 @@
       "firstContent": "Cieľom projektu je zvýšiť informovanosť o problematike sexuálneho zneužívania a obťažovania medzi mladými ľuďmi, ich rodičmi a pedagógmi. Zameriava sa na prevenciu, rozpoznávanie rizikových situácií a podporu otvorenej komunikácie o citlivých témach. Projekt bude realizovaný prostredníctvom vzdelávacích a informačných aktivít, ktoré budú prebiehať v školách a komunitných prostrediach.",
       "grant": "Výška dotácie: 1 500 €",
       "grant_info": "Finančné prostriedky budú použité na organizáciu aktivít, tvorbu vzdelávacích materiálov a zabezpečenie odborného tímu."
+    },
+    "iwd_2025": {
+      "title": "MDŽ 2025 v Prešove a v Košiciach",
+      "main_content": "Aj takto vyzeral MDŽ v Prešove, či v Košiciach. Rozdávali sme spolu ružu pri tejto príležitosti, za ktorou sa skrýval príbeh prevencie pred sexuálnym zneužívaním a obťažovaním.",
+      "content": "Našim cieľom je zvyšovať povedomie o tejto téme a motivovať obete, aby sa nebáli prehovoriť.",
+      "main_partner": "Ďakujeme vám všetkým za pomoc pri organizácii a taktiež Mestskému zastupiteľstvu Prešov za spoluprácu.",
+      "partners": "Taktiež naša vďaka patrí našim partnerom:",
+      "thanks": "Ďakujeme!"
     }
   },
   "contactPage": {

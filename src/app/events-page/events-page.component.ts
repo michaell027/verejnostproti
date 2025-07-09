@@ -17,5 +17,18 @@ import { SchoolLecturesComponent } from './school-lectures/school-lectures.compo
   ]
 })
 export class EventsPageComponent {
+  events = ['womans-day-2025', 'school-lectures', 'womans-day-2024'];
+  currentIndex = 0;
 
+  prevEvent() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    }
+  }
+
+  nextEvent() {
+    if (this.currentIndex < this.events.length - 1) {
+      this.currentIndex++;
+    }
+  }
 }

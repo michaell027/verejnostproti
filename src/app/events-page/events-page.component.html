@@ -1,3 +1,28 @@
 <app-events-heading></app-events-heading>
-<app-womens-day></app-womens-day>
-<app-school-lectures></app-school-lectures>
+<div class="events-slider">
+  <button
+    class="arrow left"
+    (click)="prevEvent()"
+    [disabled]="currentIndex === 0"
+  >
+    &#8592;
+  </button>
+
+  <ng-container [ngSwitch]="events[currentIndex]">
+    <app-school-lectures *ngSwitchCase="'school-lectures'"></app-school-lectures
+    ><app-womens-day-2025
+      *ngSwitchCase="'womans-day-2025'"
+    ></app-womens-day-2025
+    ><app-womens-day-2024
+      *ngSwitchCase="'womans-day-2024'"
+    ></app-womens-day-2024>
+  </ng-container>
+
+  <button
+    class="arrow right"
+    (click)="nextEvent()"
+    [disabled]="currentIndex === events.length - 1"
+  >
+    &#8594;
+  </button>
+</div>

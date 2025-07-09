@@ -97,6 +97,39 @@ button i {
   margin-right: 5px;
 }
 
+.mini-photos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin: 35px 0 35px 0;
+  justify-items: center;
+  align-items: center;
+}
+
+.mini-photos-grid a {
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.mini-photos-grid a:hover {
+  box-shadow: 0 6px 24px rgba(157, 111, 177, 0.18);
+  transform: scale(1.08);
+  z-index: 2;
+}
+
+.mini-photos-grid img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
 @media (max-width: 2000px) {
   .image-holder {
     width: 40%;
@@ -161,6 +194,11 @@ button i {
   .text {
     font-size: 15px;
   }
+
+  .mini-photos-grid img {
+    width: 75px;
+    height: 75px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -206,5 +244,15 @@ button i {
   button {
     padding: 10px 15px 10px 15px;
     font-size: 12px;
+  }
+
+  .mini-photos-grid {
+    gap: 12px;
+    margin: 18px 0 18px 0;
+  }
+
+  .mini-photos-grid img {
+    width: 55px;
+    height: 55px;
   }
 }
