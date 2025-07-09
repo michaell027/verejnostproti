@@ -2,15 +2,14 @@ import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { Loader } from '@googlemaps/js-api-loader';
 import * as process from 'process';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @Component({
   selector: 'app-google-maps',
   templateUrl: './google-maps.component.html',
   styleUrls: ['./google-maps.component.css'],
   standalone: true,
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule, GoogleMapsModule],
 })
 export class GoogleMapsComponent implements OnInit {
   map?: google.maps.Map;
