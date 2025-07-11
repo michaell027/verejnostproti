@@ -1,11 +1,11 @@
 <div class="container">
   <div class="image-holder">
-    <img
-      ngSrc="assets/images/banner.png"
-      alt="learning"
-      height="7559"
-      width="3213"
-    />
+    <p-image
+      src="assets/images/banner.png"
+      alt="banner"
+      [preview]="true"
+      width="100%"
+    ></p-image>
   </div>
   <div class="text-holder">
     <h2 class="top-title text-uppercase">
@@ -20,26 +20,37 @@
     <p class="text">
       {{ "homePage.learning.text.second" | translate }}
     </p>
-    <!-- Mini photos grid -->
     <div class="mini-photos-grid">
-      <a href="assets/images/lectures/lecture_1.jpeg" target="_blank"
-        ><img src="assets/images/lectures/lecture_1.jpeg" alt="test image 1"
-      /></a>
-      <a href="assets/images/lectures/lecture_2.jpeg" target="_blank"
-        ><img src="assets/images/lectures/lecture_2.jpeg" alt="test image 2"
-      /></a>
-      <a href="assets/images/lectures/lecture_3.jpeg" target="_blank"
-        ><img src="assets/images/lectures/lecture_3.jpeg" alt="test image 3"
-      /></a>
-      <a href="assets/images/lectures/lecture_4.jpeg" target="_blank"
-        ><img src="assets/images/lectures/lecture_4.jpeg" alt="test image 4"
-      /></a>
-      <a href="assets/images/lectures/lecture_5.jpeg" target="_blank"
-        ><img src="assets/images/lectures/lecture_5.jpeg" alt="test image 5"
-      /></a>
-      <a href="assets/images/lectures/lecture_6.jpeg" target="_blank"
-        ><img src="assets/images/lectures/lecture_6.jpeg" alt="test image 6"
-      /></a>
+      <p-image
+        src="assets/images/lectures/lecture_1.jpeg"
+        alt="test image 1"
+        preview="true"
+      ></p-image>
+      <p-image
+        src="assets/images/lectures/lecture_2.jpeg"
+        alt="test image 2"
+        preview="true"
+      ></p-image>
+      <p-image
+        src="assets/images/lectures/lecture_3.jpeg"
+        alt="test image 3"
+        preview="true"
+      ></p-image>
+      <p-image
+        src="assets/images/lectures/lecture_4.jpeg"
+        alt="test image 4"
+        preview="true"
+      ></p-image>
+      <p-image
+        src="assets/images/lectures/lecture_5.jpeg"
+        alt="test image 5"
+        preview="true"
+      ></p-image>
+      <p-image
+        src="assets/images/lectures/lecture_6.jpeg"
+        alt="test image 6"
+        preview="true"
+      ></p-image>
     </div>
     <div class="sponsor">
       <div class="sponsor-text-holder">
@@ -52,12 +63,12 @@
       </div>
       <div class="sponsor-logo-holder">
         <img
-          ngSrc="../../../../../assets/images/icons/KSK_logo_hor_ver.png"
+          ngSrc="../../../../../assets/images/logos/KSK_logo_hor_ver.webp"
           alt="KSK"
           height="116"
           width="454"
         />
-        <button>
+        <button pButton class="purple-button">
           <i class="pi pi-chevron-right"></i>
           {{ "homePage.learning.sponsor.button" | translate }}
         </button>

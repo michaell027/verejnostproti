@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './main-page/footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { TopHeaderComponent } from './components/top-header/top-header.component';
 
 @Component({

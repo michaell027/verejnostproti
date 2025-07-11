@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { VideoHolderComponent } from '../../main-page/video-holder/video-holder.component';
-import { GoalsComponent } from '../../main-page/goals/goals.component';
+import { VideoHolderComponent } from './components/video-holder/video-holder.component';
+import { GoalsComponent } from './components/goals/goals.component';
 import { ColumnsComponent } from './components/columns/columns.component';
-import { StoriesHolderComponent } from '../../main-page/stories-holder/stories-holder.component';
-import { MapHolderComponent } from '../../main-page/map-holder/map-holder.component';
-import { ReportageHolderComponent } from '../../main-page/reportage-holder/reportage-holder.component';
+import { StoriesHolderComponent } from './components/stories-holder/stories-holder.component';
+import { ContactInfoComponent } from './components/contact-info/contact-info.component';
+import { ReportageHolderComponent } from './components/reportage-holder/reportage-holder.component';
 import { CampaignComponent } from './components/campaign/campaign.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { OngoingProjectComponent } from './components/ongoing-project/ongoing-project.component';
@@ -21,7 +21,7 @@ import { OngoingProjectComponent } from './components/ongoing-project/ongoing-pr
     GoalsComponent,
     ColumnsComponent,
     StoriesHolderComponent,
-    MapHolderComponent,
+    ContactInfoComponent,
     ReportageHolderComponent,
     CampaignComponent,
     HeroSectionComponent,

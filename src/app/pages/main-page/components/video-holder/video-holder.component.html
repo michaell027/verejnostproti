@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-5 text-black text-holder" style="padding: 0">
+    <div class="col-md-5 text-black text-holder p-0">
       <h4 class="text-uppercase">
         {{ "homePage.video.subtitle" | translate }}
       </h4>
@@ -12,17 +12,15 @@
         type="button"
         (click)="redirect()"
         [label]="'homePage.video.button' | translate"
-        class="read-more-button"
+        class="purple-button"
       ></button>
     </div>
     <div
-      class="col-md-7 d-flex justify-content-center align-items-lg-end align-items-md-center"
-      style="padding: 0"
+      class="col-md-7 d-flex justify-content-center align-items-lg-end align-items-md-center p-0"
     >
       <iframe
         src="https://www.youtube.com/embed/SWrlJW_wy2c"
         title="Aktuálna situácia na Slovensku"
-        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>

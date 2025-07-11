@@ -5,7 +5,9 @@
     </div>
     <div id="contact" class="contact-section">
       <div class="address-holder">
-        <h2 class="text-uppercase">{{"homePage.info.left.title" | translate}}</h2>
+        <h2 class="text-uppercase">
+          {{ "homePage.info.left.title" | translate }}
+        </h2>
 
         <div class="address">
           <i class="pi pi-map-marker"></i>
@@ -24,40 +26,70 @@
         </div>
       </div>
       <div class="sponsors-holder">
-        <h2 class="text-uppercase">{{"homePage.info.right.title" | translate}}</h2>
+        <h2 class="text-uppercase">
+          {{ "homePage.info.right.title" | translate }}
+        </h2>
         <div class="sponsors">
           <a
             href="https://www.facebook.com/elitbytdevelopment40/"
             target="_blank"
           >
-            <img src="assets/images/elit-byt-logo.jpg" alt="sponzor" />
+            <img
+              ngSrc="/assets/images/logos/elit-byt-logo.webp"
+              alt="elit logo"
+              height="500"
+              width="500"
+            />
           </a>
           <a href="https://www.gta.sk/" target="_blank">
-            <img src="assets/images/gta-logo.jpg" alt="sponzor" />
+            <img
+              ngSrc="/assets/images/logos/gta-logo.webp"
+              alt="gta logo"
+              height="500"
+              width="500"
+            />
           </a>
           <a href="https://www.trustpay.sk/" target="_blank">
-            <img src="assets/images/trust_pay.png" alt="sponzor" />
+            <img
+              ngSrc="/assets/images/logos/trust_pay.webp"
+              alt="trust pay logo"
+              height="500"
+              width="500"
+            />
           </a>
           <a href="https://www.fakturaonline.sk/" target="_blank">
-            <img src="assets/images/faktura_online.png" alt="sponzor" />
+            <img
+              ngSrc="/assets/images/logos/faktura_online.webp"
+              alt="invoice online logo"
+              height="400"
+              width="3317"
+            />
           </a>
           <a href="https://precisecatering.sk/en/home/" target="_blank">
-            <img src="assets/images/precise-catering.png" alt="sponzor" />
+            <img
+              ngSrc="/assets/images/logos/precise-catering.webp"
+              alt="precise catering logo"
+              height="693"
+              width="1587"
+            />
           </a>
         </div>
         <div class="main-sponsors">
-          <ng-container *ngIf="kskData | async as content">
-            <a [href]="content.sponsorLink" target="_blank">
-              <img [src]="content.logoPath" alt="sponzor" />
-            </a>
-          </ng-container>
+          <app-ksk-logo></app-ksk-logo>
           <a href="https://youth.europa.eu/solidarity_en" target="_blank">
-            <img src="assets/images/european_solidarity_corps_logo.png" alt="sponzor" />
+            <img
+              ngSrc="/assets/images/logos/european_solidarity_corps_logo.webp"
+              alt="eu solidarity corps logo"
+              height="465"
+              width="1753"
+            />
           </a>
         </div>
         <div class="question">
-          <h4 class="text-uppercase">{{"homePage.info.right.subtitle" | translate}}</h4>
-          <h6>{{"homePage.info.right.contact" | translate}}</h6>
+          <h4 class="text-uppercase">
+            {{ "homePage.info.right.subtitle" | translate }}
+          </h4>
+          <h6>{{ "homePage.info.right.contact" | translate }}</h6>
           <p>
             Daniel Arvai <br />
             <a href="tel:0951011560">0951 011 560</a>

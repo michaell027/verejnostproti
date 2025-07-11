@@ -60,3 +60,43 @@ h1 {
   opacity: 0.9;
   border: white 2px solid;
 }
+
+.white-button:hover {
+  opacity: 1;
+}
+
+.purple-button {
+  background-color: rgba(157, 111, 177, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.purple-button:hover {
+  background-color: rgba(121, 55, 116, 255) !important;
+}
+
+.p-image img {
+  border-radius: 16px;
+}
+
+.p-image .p-image-preview-indicator {
+  border-radius: 16px !important;
+}
+
+.mini-photos-grid .p-image img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.p-image-preview {
+  border-radius: 16px !important;
+}
+
+.p-image-preview:hover {
+  border-radius: 16px !important;
+}

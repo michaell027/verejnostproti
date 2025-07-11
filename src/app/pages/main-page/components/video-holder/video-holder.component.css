@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 h4 {
-  color: rgba(159,111,175,255);
+  color: rgba(159, 111, 175, 255);
   padding: 10px 0 10px 0;
 }
 
@@ -15,7 +15,7 @@ p {
 }
 
 .custom-font {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 30px;
 }
 
@@ -24,19 +24,9 @@ iframe {
   height: 400px;
 }
 
-button {
-  background-color: rgba(157,111,177,255);
-  color: white;
-  border: none;
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
+.purple-button {
   font-weight: 800;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgba(121,55,116,255) !important;
+  font-size: 18px;
 }
 
 .container {
@@ -49,7 +39,6 @@ button:hover {
 .text-holder {
   margin-bottom: 20px;
 }
-
 
 @media (max-width: 991px) {
   h4 {

@@ -15,8 +15,6 @@ export class GoogleMapsComponent implements OnInit {
   map?: google.maps.Map;
   marker?: google.maps.marker.AdvancedMarkerElement;
 
-  isInitialized = false;
-
   mapHeight = 400;
   mapWidth = 400;
 
@@ -39,7 +37,6 @@ export class GoogleMapsComponent implements OnInit {
   }
   ngOnInit() {
     if (!process.env['GOOGLE_MAPS_API_KEY']) {
-      console.error('GOOGLE_MAPS_API_KEY is not set');
       return;
     }
 
@@ -70,25 +67,19 @@ export class GoogleMapsComponent implements OnInit {
         zoomControl: true,
         scrollwheel: true,
         disableDoubleClickZoom: true,
-        draggable: true,
       },
     );
 
-    console.log('Map loaded');
+    await google.maps.importLibrary('marker').then(() => {
+      this.marker = new google.maps.marker.AdvancedMarkerElement({
+        map: this.map,
+        position: markerPosition,
+        title: 'Verejnosť proti',
+      });
 
-    const { AdvancedMarkerElement } = (await google.maps.importLibrary(
-      'marker',
-    )) as google.maps.MarkerLibrary;
-
-    // The marker, positioned at the specified location
-    this.marker = new google.maps.marker.AdvancedMarkerElement({
-      map: this.map,
-      position: markerPosition,
-      title: 'Verejnosť proti',
-    });
-
-    this.marker!.addListener('click', () => {
-      this.openGoogleMaps();
+      this.marker!.addListener('click', () => {
+        this.openGoogleMaps();
+      });
     });
   }
 

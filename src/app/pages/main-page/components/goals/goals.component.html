@@ -1,16 +1,18 @@
 <div id="goals" class="container mt-5 holder">
-  <div class="row">
-    <div class="col-lg-5">
+  <div class="row align-items-center">
+    <div class="col-lg-5 order-lg-1 order-2">
       <h2 class="text-uppercase">{{ "homePage.goals.title" | translate }}</h2>
       <div class="img-holder">
-        <img
+        <p-image
           src="/assets/images/daniel_podpis_zmluvy.jpg"
-          alt="Fotka"
-          class="img-fluid mt-3"
+          alt="signature"
+          preview="true"
+          class="img-fluid"
+          [imageStyle]="{ 'max-width': '100%' }"
         />
       </div>
     </div>
-    <div class="col-lg-7">
+    <div class="col-lg-7 order-lg-2 order-1">
       <ul class="goals-holder">
         <li class="list-group-item">
           <span><i class="pi pi-check-circle"></i></span

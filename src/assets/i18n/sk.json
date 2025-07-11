@@ -82,6 +82,12 @@
       },
       "story": {
         "button": "Čítať ďalej"
+      },
+      "dialog": {
+        "header": "Pridať príbeh",
+        "title": "Nadpis:",
+        "content": "Napíšte svoj príbeh:",
+        "button": "Odoslať"
       }
     },
     "info": {

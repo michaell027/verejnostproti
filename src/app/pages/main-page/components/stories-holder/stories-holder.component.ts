@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { FirebaseService } from '../../services/firebase.service';
+import { FirebaseService } from '../../../../services/firebase.service';
 import { Message } from 'primeng/api';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
@@ -10,7 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { MessagesModule } from 'primeng/messages';
 import { CardModule } from 'primeng/card';
 import { TranslateModule } from '@ngx-translate/core';
-import { TruncateTextPipe } from '../../pipes/truncate-text.pipe';
+import { TruncateTextPipe } from '../../../../pipes/truncate-text.pipe';
 
 @Component({
   selector: 'app-stories-holder',
@@ -91,14 +91,19 @@ export class StoriesHolderComponent implements OnInit {
       this.error = 'Please fill in all fields!';
       return;
     }
-    this.firebaseService.addData('stories', {
-      title: this.storyTitle,
-      description: this.storyDescription,
-      verified: false,
-    });
-    this.formVisible = false;
-    this.alert = true;
+    this.firebaseService
+      .addData('stories', {
+        title: this.storyTitle,
+        description: this.storyDescription,
+        verified: false,
+      })
+      .then(() => {
+        this.formVisible = false;
+        this.alert = true;
+      });
   }
 
-  protected readonly window = window;
+  redirectToStories() {
+    window.location.href = 'stories';
+  }
 }

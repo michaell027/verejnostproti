@@ -1,0 +1,5 @@
+<ng-container *ngIf="kskData | async as content">
+  <a [href]="content.sponsorLink" target="_blank">
+    <img [ngSrc]="content.logoPath" alt="ksk logo" height="60" width="200" />
+  </a>
+</ng-container>

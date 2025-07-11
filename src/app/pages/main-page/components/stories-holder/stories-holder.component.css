@@ -1,6 +1,5 @@
-
 h2 {
-  padding: 50px 50px 0px 0;
+  padding: 50px 50px 0 0;
   font-weight: 900;
   font-size: 2.5rem;
 }
@@ -14,7 +13,7 @@ h2 {
   font-weight: 800;
   font-size: 50px;
   padding-left: 35px;
-  border-bottom: rgba(158,112,174,255) solid 4px;
+  border-bottom: rgba(158, 112, 174, 255) solid 4px;
   border-bottom-style: groove;
 }
 
@@ -40,41 +39,15 @@ p-messages {
   border: none;
 }
 
-button {
-  background-color: rgba(157,111,177,255);
-  color: white;
-  border: none;
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: rgba(121,55,116,255) !important;
-}
-
-.buttons {
-  background-color: rgba(121,55,116,255);
-  color: white;
-  border: none;
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.buttons:hover {
-  background-color: rgba(157,111,177,255) !important;
-}
-
 .buttons-holder {
   display: flex;
   justify-content: end;
   margin-top: 20px;
   margin-right: 120px;
+}
+
+.white-button {
+  border: 2px solid rgba(158, 112, 174, 255);
 }
 
 .error {
@@ -86,12 +59,6 @@ button:hover {
   text-align: center;
 }
 
-/*.card {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  align-items: center;*/
-/*}*/
-
 .p-float-label {
   margin-top: 5px;
   margin-bottom: 25px;
@@ -102,7 +69,6 @@ textarea {
   width: 100%;
   min-width: 300px;
 }
-
 
 @media screen and (max-width: 1120px) {
   .card-container {
@@ -128,7 +94,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 770px) {
   p-messages {
     margin: 0;
     padding: 0;
@@ -237,5 +203,3 @@ textarea {
     font-size: 12px;
   }
 }
-
-

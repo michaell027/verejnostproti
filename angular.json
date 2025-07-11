@@ -69,10 +69,10 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "verejnostproti:build:production"
+              "buildTarget": "verejnostproti:build:production"
             },
             "development": {
-              "browserTarget": "verejnostproti:build:development"
+              "buildTarget": "verejnostproti:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -8,7 +8,7 @@
     </p>
     <ng-template pTemplate="footer">
       <button
-        class="buttons"
+        class="purple-button"
         (click)="showDialog(story.title, story.description)"
       >
         {{ "homePage.stories.story.button" | translate }}
@@ -18,10 +18,10 @@
 </div>
 
 <div class="buttons-holder gap-4">
-  <button (click)="window.location.href = 'stories'">
+  <button class="purple-button" (click)="redirectToStories()">
     {{ "homePage.stories.buttons.more" | translate }}
   </button>
-  <button (click)="showForm()">
+  <button class="white-button" (click)="showForm()">
     {{ "homePage.stories.buttons.add" | translate }}
   </button>
 </div>
@@ -37,14 +37,16 @@
 </p-dialog>
 
 <p-dialog
-  header="Pridaj príbeh"
+  header="{{ 'homePage.stories.dialog.header' | translate }}"
   [(visible)]="formVisible"
   [style]="{ maxWidth: '70vw', maxHeight: '500px' }"
 >
   <div class="card flex justify-content-center">
     <span class="p-float-label">
-      <input pInputText id="username" [(ngModel)]="storyTitle" />
-      <label htmlFor="username">Nadpis</label>
+      <input pInputText id="title" [(ngModel)]="storyTitle" />
+      <label htmlFor="title">{{
+        "homePage.stories.dialog.title" | translate
+      }}</label>
     </span>
     <span class="p-float-label">
       <textarea
@@ -52,10 +54,14 @@
         pInputTextarea
         [(ngModel)]="storyDescription"
       ></textarea>
-      <label for="float-input">Obsah</label>
+      <label for="float-input">
+        {{ "homePage.stories.dialog.content" | translate }}
+      </label>
       <p class="error">{{ error }}</p>
     </span>
-    <button class="button-story" (click)="addStory()">Pridať príbeh</button>
+    <button class="purple-button" (click)="addStory()">
+      {{ "homePage.stories.dialog.button" | translate }}
+    </button>
   </div>
 </p-dialog>
 

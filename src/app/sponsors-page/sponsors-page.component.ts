@@ -20,8 +20,8 @@ export class SponsorsPageComponent {
         return {
           logoPath:
             lang === 'en'
-              ? 'assets/images/KSK_logo_eng_hor_ver.png'
-              : 'assets/images/KSK_logo_hor_ver.png',
+              ? 'assets/images/KSK_logo_eng_hor_ver.webp'
+              : 'assets/images/KSK_logo_hor_ver.webp',
           sponsorLink:
             lang === 'en'
               ? 'https://web.vucke.sk/en/'

@@ -82,6 +82,12 @@
       },
       "story": {
         "button": "Read More"
+      },
+      "dialog": {
+        "header": "Add Story",
+        "title": "Title:",
+        "content": "Write your story here:",
+        "button": "Submit"
       }
     },
     "info": {

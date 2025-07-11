@@ -1,21 +1,16 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { map, Observable } from 'rxjs';
-import { GoogleMapsComponent } from '../google-maps/google-maps.component';
+import { TranslateService } from '@ngx-translate/core';
+import { AsyncPipe, NgIf, NgOptimizedImage } from '@angular/common';
 
 @Component({
-  selector: 'app-map-holder',
-  templateUrl: './map-holder.component.html',
-  styleUrls: ['./map-holder.component.css'],
+  selector: 'app-ksk-logo',
   standalone: true,
-  imports: [
-    CommonModule,
-    TranslateModule,
-    GoogleMapsComponent
-  ]
+  imports: [AsyncPipe, NgIf, NgOptimizedImage],
+  templateUrl: './ksk-logo.component.html',
+  styleUrl: './ksk-logo.component.css',
 })
-export class MapHolderComponent {
+export class KskLogoComponent {
   kskData: Observable<{ logoPath: string; sponsorLink: string }>;
 
   constructor(translateService: TranslateService) {
@@ -25,8 +20,8 @@ export class MapHolderComponent {
         return {
           logoPath:
             lang === 'en'
-              ? 'assets/images/KSK_logo_eng_hor_ver.png'
-              : 'assets/images/KSK_logo_hor_ver.png',
+              ? 'assets/images/logos/KSK_logo_eng_hor_ver.webp'
+              : 'assets/images/logos/KSK_logo_hor_ver.webp',
           sponsorLink:
             lang === 'en'
               ? 'https://web.vucke.sk/en/'

@@ -19,12 +19,6 @@
   justify-content: center;
 }
 
-.image-holder img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
 .title {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -81,17 +75,6 @@
   justify-content: center;
 }
 
-button {
-  background-color: rgba(157, 111, 177, 255);
-  color: white;
-  border: none;
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
 button i {
   font-size: 10px;
   margin-right: 5px;
@@ -105,29 +88,6 @@ button i {
   margin: 35px 0 35px 0;
   justify-items: center;
   align-items: center;
-}
-
-.mini-photos-grid a {
-  display: block;
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition:
-    box-shadow 0.2s,
-    transform 0.2s;
-}
-
-.mini-photos-grid a:hover {
-  box-shadow: 0 6px 24px rgba(157, 111, 177, 0.18);
-  transform: scale(1.08);
-  z-index: 2;
-}
-
-.mini-photos-grid img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
 }
 
 @media (max-width: 2000px) {
@@ -159,20 +119,29 @@ button i {
   }
 }
 
+@media (max-width: 1100px) {
+  .mini-photos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 991px) {
   .container {
-    flex-direction: row-reverse;
-    gap: 40px;
-    padding: 40px 30px 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 30px 10px 0 10px;
   }
 
   .image-holder {
-    width: 50%;
-    margin-right: 0;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .text-holder {
-    width: 50%;
+    width: 100%;
   }
 
   .sponsor-logo-holder img {
@@ -193,11 +162,6 @@ button i {
 
   .text {
     font-size: 15px;
-  }
-
-  .mini-photos-grid img {
-    width: 75px;
-    height: 75px;
   }
 }
 
@@ -250,9 +214,12 @@ button i {
     gap: 12px;
     margin: 18px 0 18px 0;
   }
+}
 
-  .mini-photos-grid img {
-    width: 55px;
-    height: 55px;
+@media (max-width: 450px) {
+  .mini-photos-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 10px;
   }
 }

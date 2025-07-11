@@ -79,30 +79,6 @@
   font-family: "Montserrat", Arial, sans-serif;
 }
 
-.campaign-donate-btn {
-  background: #fff;
-  color: #9e70ae;
-  border-radius: 8px;
-  padding: 10px 28px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  text-decoration: none;
-  box-shadow: 0 2px 8px rgba(158, 112, 174, 0.15);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    box-shadow 0.2s;
-}
-
-.campaign-donate-btn:hover {
-  background: #f3e6fa;
-  color: #7a4e99;
-  box-shadow: 0 4px 16px rgba(158, 112, 174, 0.25);
-}
-
 .donate-icon {
   font-size: 1.3rem;
   margin-right: 4px;
