@@ -4,7 +4,7 @@ import { AboutUsPageComponent } from './pages/about-us-page/about-us-page.compon
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { AllStoriesPageComponent } from './all-stories-page/all-stories-page.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
-import { SponsorsPageComponent } from './sponsors-page/sponsors-page.component';
+import { SponsorsPageComponent } from './pages/sponsors-page/sponsors-page.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 
 export const routes: Routes = [

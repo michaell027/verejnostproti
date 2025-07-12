@@ -11,14 +11,10 @@
           {{ "sponsorsPage.mainSponsors" | translate }}:
         </h3>
         <div class="main-sponsors-row">
-          <ng-container *ngIf="kskData | async as content">
-            <a [href]="content.sponsorLink" target="_blank">
-              <img [src]="content.logoPath" alt="sponzor" />
-            </a>
-          </ng-container>
+          <app-ksk-logo />
           <a href="https://youth.europa.eu/solidarity_en" target="_blank">
             <img
-              ngSrc="../../assets/images/logos/european_solidarity_corps_logo.webp"
+              ngSrc="/assets/images/logos/european_solidarity_corps_logo.webp"
               alt="sponzor"
               height="80"
               width="200"
@@ -32,7 +28,7 @@
           target="_blank"
         >
           <img
-            ngSrc="/assets/images/logos/elit-byt-logo.webp"
+            ngSrc="/src/assets/images/logos/elit-byt-logo.webp"
             alt="sponzor"
             width="150"
             height="150"
@@ -40,7 +36,7 @@
         </a>
         <a href="https://www.gta.sk/" target="_blank">
           <img
-            ngSrc="../../assets/images/logos/gta-logo.webp"
+            ngSrc="../../../assets/images/logos/gta-logo.webp"
             alt="sponzor"
             height="150"
             width="150"
@@ -48,7 +44,7 @@
         </a>
         <a href="https://www.trustpay.sk/" target="_blank">
           <img
-            ngSrc="../../assets/images/logos/trust_pay.webp"
+            ngSrc="../../../assets/images/logos/trust_pay.webp"
             alt="sponzor"
             height="150"
             width="150"
@@ -56,7 +52,7 @@
         </a>
         <a href="https://www.fakturaonline.sk/" target="_blank">
           <img
-            ngSrc="assets/images/faktura_online_square.png"
+            ngSrc="../../../assets/images/faktura_online_square.png"
             alt="sponzor"
             height="150"
             width="150"
@@ -64,7 +60,7 @@
         </a>
         <a href="https://precisecatering.sk/en/home/" target="_blank">
           <img
-            ngSrc="../../assets/images/logos/precise-catering.webp"
+            ngSrc="../../../assets/images/logos/precise-catering.webp"
             alt="sponzor"
             height="100"
             width="175"

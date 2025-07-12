@@ -1,22 +1,9 @@
 .container-fluid {
   height: 1200px;
-  padding: 0;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
 }
 
 .background-image {
-  height: 100%;
   background-image: url("/assets/images/sponsor_page_wallpaper.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .purple-box {

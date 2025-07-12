@@ -8,10 +8,17 @@ body {
   font-family: var(--font-family), serif;
 }
 
-.background-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .background-image {
@@ -20,27 +27,24 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 0;
 }
 
-.background-container::before {
+.background-image::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  z-index: 3;
-  border-radius: 20px;
-  transform: translateY(-50%);
+.background-image > * {
+  position: relative;
+  z-index: 2;
 }
 
 h1 {
