@@ -28,7 +28,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .content-container {
@@ -40,7 +40,6 @@ body {
   color: white;
   z-index: 3;
   border-radius: 20px;
-  background-color: rgba(128, 0, 128, 0.5);
   transform: translateY(-50%);
 }
 

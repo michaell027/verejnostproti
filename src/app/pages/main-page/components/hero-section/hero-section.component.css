@@ -12,6 +12,7 @@
 
 .content-container {
   height: 400px;
+  background-color: rgba(128, 0, 128, 0.5);
   margin: -400px 250px 0 250px;
   padding: 80px 40px;
 }

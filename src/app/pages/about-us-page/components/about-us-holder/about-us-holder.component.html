@@ -1,19 +1,19 @@
-<div class="container-fluid">
-  <div class="background-image">
-    <div class="content">
-      <div class="purple-box">
-        <h2 class="about-us-heading text-uppercase">
-          {{ "aboutPage.title" | translate }}
-        </h2>
-      </div>
-      <div class="white-column">
-        <p class="about-us-text">
-          {{ "aboutPage.info" | translate }}
-        </p>
-      </div>
-      <div class="white-column" style="margin-top: 50px">
-        <p class="text">{{ "aboutPage.mission.title" | translate }}</p>
-      </div>
+<div class="background-container">
+  <div class="background-image"></div>
+  <div class="background-overlay"></div>
+  <div class="content-container">
+    <div class="purple-box">
+      <h2 class="about-us-heading text-uppercase">
+        {{ "aboutPage.title" | translate }}
+      </h2>
+    </div>
+    <div class="white-column mb-4">
+      <p>
+        {{ "aboutPage.info" | translate }}
+      </p>
+    </div>
+    <div class="white-column">
+      <p class="text">{{ "aboutPage.mission.title" | translate }}</p>
     </div>
   </div>
 </div>
@@ -23,15 +23,20 @@
     <div class="box">
       <div class="purple-circle">
         <div class="white-circle">
-          <img src="assets/images/group-icon.svg" />
+          <img
+            ngSrc="assets/images/group-icon.svg"
+            height="16"
+            width="16"
+            alt="group icon"
+          />
         </div>
       </div>
-      <p style="font-size: 18px">
+      <p>
         <strong>{{
           "aboutPage.mission.columns.first.title" | translate
         }}</strong>
       </p>
-      <p style="padding-top: 15px">
+      <p class="pt-3">
         {{ "aboutPage.mission.columns.first.content" | translate }}
       </p>
     </div>
@@ -41,15 +46,20 @@
     <div class="box">
       <div class="purple-circle">
         <div class="white-circle">
-          <img src="assets/images/edit-list-icon.svg" />
+          <img
+            ngSrc="assets/images/edit-list-icon.svg"
+            height="16"
+            width="16"
+            alt="list icon"
+          />
         </div>
       </div>
-      <p style="font-size: 18px">
+      <p>
         <strong>{{
           "aboutPage.mission.columns.second.title" | translate
         }}</strong>
       </p>
-      <p style="padding-top: 15px">
+      <p class="pt-3">
         {{ "aboutPage.mission.columns.second.content" | translate }}
       </p>
     </div>
@@ -59,15 +69,20 @@
     <div class="box">
       <div class="purple-circle">
         <div class="white-circle">
-          <img src="assets/images/gavel-icon.svg" />
+          <img
+            ngSrc="assets/images/gavel-icon.svg"
+            height="16"
+            width="16"
+            alt="gavel icon"
+          />
         </div>
       </div>
-      <p style="font-size: 18px">
+      <p>
         <strong>{{
           "aboutPage.mission.columns.third.title" | translate
         }}</strong>
       </p>
-      <p style="padding-top: 15px">
+      <p class="pt-3">
         {{ "aboutPage.mission.columns.third.content" | translate }}
       </p>
     </div>
@@ -76,15 +91,20 @@
     <div class="box">
       <div class="purple-circle">
         <div class="white-circle">
-          <img src="assets/images/regulations-icon.svg" />
+          <img
+            ngSrc="assets/images/regulations-icon.svg"
+            height="16"
+            width="16"
+            alt="regulations icon"
+          />
         </div>
       </div>
-      <p style="font-size: 18px">
+      <p>
         <strong>{{
           "aboutPage.mission.columns.fourth.title" | translate
         }}</strong>
       </p>
-      <p style="padding-top: 15px">
+      <p class="pt-3">
         {{ "aboutPage.mission.columns.fourth.content" | translate }}
       </p>
     </div>
